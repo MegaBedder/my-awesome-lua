@@ -23,8 +23,28 @@ Inspired by the list [awesome-lua](https://github.com/LewisJEllis/awesome-lua).
 ### Package Managers
 - [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", plus public rock repository and website.  Much like npm or pip.
 
+### Network
+[lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
+
+[llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
+
+[lua-resty-socket](https://luarocks.org/modules/thibaultcha/lua-resty-socket) - A module offering interoperability between the LuaSocket and cosocket APIs
+
+[lua-net](https://luarocks.org/modules/rayaman/lua-net) - Lua networking library that wraps around lua-socket to make networking easy.
+
+[dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
+
+### Events & threads
+[Copas](https://luarocks.org/modules/tieske/copas) - Coroutine Oriented Portable Asynchronous Services
+
+[cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
 
 ### UNIX
+[lunix](https://luarocks.org/modules/daurnimator/lunix) - Bindings to common Unix system APIs, striving for thread-safety.
+
+[luaunix](https://luarocks.org/modules/mbalmer/luaunix) - A Lua Binding for Selected Unix functions and System Calls
+
+[dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
 ### C ANSI standard
 [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
@@ -34,8 +54,12 @@ Inspired by the list [awesome-lua](https://github.com/LewisJEllis/awesome-lua).
 
 [Lrexlib-POSIX](https://luarocks.org/modules/rrt/lrexlib-posix) - Lua binding of the POSIX regular expression library.
 
-[nixio](https://luarocks.org/modules/luarocks/nixio) [[github]](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio)
- - is a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support.
+[nixio](https://luarocks.org/modules/luarocks/nixio) - System, Networking and I/O library for Lua.
+
+> is a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support.
+
+* [lua-nixio](https://github.com/jow-/lua-nixio)
+* [nixio [fork]](https://github.com/Neopallium/nixio)
 
 [Berkeley Socket](https://en.wikipedia.org/wiki/Berkeley_sockets) (also known as BSD sockets) / [POSIX Sockets](http://pubs.opengroup.org/onlinepubs/9699919799/idx/networking.html) Interface
 
