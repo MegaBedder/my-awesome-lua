@@ -2,7 +2,7 @@
 
 > A curated list of quality Lua [packages](#packages) and [resources](#resources).
 
-Inspired by the list [awesome-lua](https://github.com/LewisJEllis/awesome-lua).
+Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/awesome-lua) and [forhappy/awesome-lua](https://github.com/forhappy/awesome-lua).
 
 
 ## Packages
@@ -24,6 +24,8 @@ Inspired by the list [awesome-lua](https://github.com/LewisJEllis/awesome-lua).
 - [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", plus public rock repository and website.  Much like npm or pip.
 
 ### Network
+[LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://rawgit.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
+
 [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
 
 [llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
@@ -77,6 +79,17 @@ Socket socket = getSocket(type = "TCP") -- creation of a socket
 connect(socket, address = "1.2.3.4", port = "80") -- connecting to remote host
 send(socket, "Hello, world!") -- sending the string
 close(socket) -- and finally closing the socket
+```
+
+Example [system calls](http://myriabit.com/ljsyscall/fosdem2013/?full#8):
+```
+local s = S.socket("inet", "stream, nonblock")
+s:setsockopt("socket", "reuseaddr", true)
+local sa = S.t.sockaddr_in(8000, "127.0.0.1")
+s:bind(sa)
+s:listen(128)
+local ep = S.epoll_create()
+ep:epoll_ctl("add", s, "in")
 ```
 
 [X/Open Transport Interface](https://en.wikipedia.org/wiki/X/Open_Transport_Interface) (XTI)
