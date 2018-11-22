@@ -18,10 +18,134 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua](http://www.lua.org/download.html) - Lua's original ANSI C interpreter.
   - [Lua Repo](https://github.com/lua/lua) - The official Lua repo, as seen by the Lua team, mirrored to GitHub.
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
+- [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
 
 
 ### Package Managers
 - [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", plus public rock repository and website.  Much like npm or pip.
+
+### Affecting Lua's Behaviour
+- Data Structures
+- Classes/Objects
+- Error Handling
+- Filter
+- Function Handling
+- Output Control
+- Reflection
+- Streams
+- Sessions
+- Variable handling
+
+### Command Line Specific Extensions
+- Ncurses — Ncurses Terminal Screen Control
+- Newt (libnewt) - a programming library for color text mode, widget based user interfaces. 
+- Readline — GNU Readline
+
+### Compression and Archive
+- Bzip2
+- LZF
+- Phar
+- Rar — Rar Archiving
+- Zip
+- Zlib — Zlib Compression
+
+### Cryptography Extensions
+- CSPRNG
+- Hash — HASH Message Digest Framework
+- Mhash
+- OpenSSL
+- Password Hashing
+- Sodium
+
+### Database Extensions
+- PDO
+- SQLite3
+
+### Date and Time Related Extensions
+- Date/Time
+- Calendar
+
+### File System Related Extensions
+- Fileinfo
+- Directories
+
+### Human Language and Character Encoding Support
+### Image Processing and Generation
+- Cairo
+- Exif — Exchangeable image information
+- GD (libgd) — Image Processing and GD
+- Gmagick
+- ImageMagick — Image Processing
+
+### Mail Related Extensions
+- SMTP
+- IMAP
+- POP3
+- NNTP
+
+### Mathematical Extensions
+- BC Math (libbcmath) — BCMath Arbitrary Precision Mathematics
+- GMP (gmplib) — GNU Multiple Precision
+
+### Process Control Extensions and System program execution
+- libeio
+- libev
+- libevent
+- PCNTL — Process Control
+- POSIX
+- pthreads (and pthreads-win32)
+- Shared Memory (shmop)
+
+### Text Processing
+- BBCode — Bulletin Board Code
+- CommonMark
+- Parle — Parsing and lexing
+- PCRE — Regular Expressions (Perl-Compatible)
+- POSIX Regex — Regular Expression (POSIX Extended)
+- Strings
+
+### Variable and Type Related Extensions
+- Ctype — Character type checking
+
+### Web Services
+- OAuth
+- REST
+- SOAP
+- XML-RPC
+
+### Windows Only Extensions
+- COM — COM and .Net (Windows)
+- DCOM
+
+### XML Manipulation
+- DOM
+- libXML
+
+### GUI Extensions
+- [libui](https://github.com/andlabs/libui)
+
+
+### Network
+- URLs
+- JSON
+- Sockets
+- FTP
+
+--
+iconv
+intl
+Multibyte String (UTF-8)
+
+
+### Utilities and Libraries
+- [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
+- [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
+- [Strictness](https://github.com/Yonaba/strictness) - a small module to track access and assignment to undefined variables in Lua
+- [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
+
+### Debugging
+- [MobDebug](https://github.com/pkulchenko/MobDebug) - Remote debugger for Lua.
+- [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 
 ### Network
 [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://rawgit.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
@@ -37,7 +161,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 [dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
 
 ### Events & threads
-[Copas](https://luarocks.org/modules/tieske/copas) - Coroutine Oriented Portable Asynchronous Services
+[lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
+
+[Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
 
 [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
 
@@ -62,6 +188,12 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 * [lua-nixio](https://github.com/jow-/lua-nixio)
 * [nixio [fork]](https://github.com/Neopallium/nixio)
+
+### Blogs / Sites
+[Lua.Space](http://lua.space/) [[RSS Feed]](http://feeds.feedburner.com/Luaspace) - The Lua Community Blog
+
+### Guides / Tutorials
+- [LuaGuide](https://github.com/davisdude/LuaGuide/blob/master/LuaGuide.md) - A guide to help people learn Lua
 
 ### Complementary lists
 - [awesome-lua](https://github.com/LewisJEllis/awesome-lua) - A curated list of quality Lua packages and resources.
