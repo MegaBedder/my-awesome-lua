@@ -25,12 +25,22 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
 - [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
+- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
 - [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on, and extends, Lua (and LuaJIT VM) with features geared more to programming in the large.
 - [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
 - [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 - [Firth](https://github.com/IonoclastBrigham/firth) - A simple Forth-like language intended for DSL creation, implemented in Lua. [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/)
 - [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
+- To Web
+  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
+  - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
+  - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
+  - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
+  - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
+  - [ljs](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
+  - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
+  - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM. [[1]](https://www.lua.org/wshop17/fengari.html) [[2]](https://www.youtube.com/watch?v=xrLIgmd8xik)
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
 ### Package Managers
@@ -45,6 +55,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Sailor](http://sailorproject.org/) - A Lua MVC web framework.
 - [Ophal](https://ophal.org/) - The highly scalable Lua CMS/CMF and web platform
 - [Orbit](http://keplerproject.github.io/orbit/) - an MVC web framework for Lua, based on WSAPI. [[1]](https://luanova.org/orbit1-2/)
+
+### GUI
+[Yue](https://github.com/yue/yue) - A library for creating native cross-platform GUI apps.
 
 ### Utilities and Libraries
 - [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
