@@ -33,15 +33,18 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Firth](https://github.com/IonoclastBrigham/firth) - A simple Forth-like language intended for DSL creation, implemented in Lua. [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/)
 - [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
 - To Web
-  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
-  - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
-  - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
-  - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
-  - [ljs](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
-  - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
-  - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM. [[1]](https://www.lua.org/wshop17/fengari.html) [[2]](https://www.youtube.com/watch?v=xrLIgmd8xik)
+  - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
+  - [Starlight](http://starlight.paulcuth.me.uk/) - A Lua to ECMAScript 6 transpiler.
+  - [lua5.1.js](https://github.com/logiceditor-com/lua5.1.js) - Lua 5.1, built with emscripten, with low-level API
+  - [glua](https://github.com/fiatjaf/glua) - a Lua VM written in Go, to Javascript.
+  - [ljs](http://code.matthewwild.co.uk/ljs) [[fork]](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
+  - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
+  - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM.
+  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
+  - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
+  - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
 ### Package Managers
