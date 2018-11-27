@@ -4,17 +4,32 @@
 
 Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/awesome-lua) and [forhappy/awesome-lua](https://github.com/forhappy/awesome-lua).
 
-
-## Packages
+## Main
 - [Implementations, Interpreters, and Bindings](#implementations-interpreters-and-bindings)
 - [Package Managers](#package-managers)
+- [Build Tools and Standalone Makers](#build-tools-and-standalone-makers)
 
+## Packages
+- [I/O](#io)
+- [Web Frameworks](#web-frameworks)
+- [GUI](#gui)
+- [Debugging](#debugging)
+- [Utilities and Libraries](#utilities-and-libraries)
+- [Network](#network)
+- [Events & threads](#events--threads)
+- [UNIX](#unix)
+- [POSIX](#posix)
 
 ## Resources
+- [Articles and publications](#articles-and-publications)
+- [Blogs / Sites](#blogs--sites)
+- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
+- [Guides / Tutorials](#guides--tutorials)
 - [Complementary lists](#complementary-lists)
 
 
 ### Implementations, Interpreters, and Bindings
+### Major implementations
 - [Lua](http://www.lua.org/download.html) - Lua's original ANSI C interpreter.
   - [Lua Repo](https://github.com/lua/lua) - The official Lua repo, as seen by the Lua team, mirrored to GitHub.
 - [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
@@ -32,7 +47,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 - [Firth](https://github.com/IonoclastBrigham/firth) - A simple Forth-like language intended for DSL creation, implemented in Lua. [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/)
 - [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
-- To Web
+- To Web (JS, asm.js, WASM)
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
   - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
@@ -42,10 +57,20 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [ljs](http://code.matthewwild.co.uk/ljs) [[fork]](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
   - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
   - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM.
-  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
   - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
   - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
+  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
+
+### Dialects / Lua Derivative (Languages based on Lua)
+- [Agena](http://agena.sourceforge.net/) - based on Lua 5 C source, but has significant syntax differences
+- [SquiLu](https://github.com/mingodad/squilu) - A mix between [Squirrel](http://squirrel-lang.org/) and Lua, trying to get the best of both. Squirrel scripting language modified with lua libraries
+- [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
+- [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
+- [GSL Shell](https://www.nongnu.org/gsl-shell/) - an interactive command line interface that gives easy access to a collection of numeric algorithms and functions based on the GNU Scientific Library (GSL).
+- [Killa](https://github.com/ex/Killa): a scripting language based in Lua 5.2 with a JavaScript-like syntax
+- [Ravi](https://github.com/dibyendumajumdar/ravi) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
+- [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
 
 ### Package Managers
 - [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", plus public rock repository and website.
@@ -53,6 +78,13 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Build Tools and Standalone Makers
 - [srlua](https://github.com/LuaDist/srlua) - A tool for building self-running Lua programs.
 - [luastatic](https://github.com/ers35/luastatic) - Build a standalone executable from a Lua program.
+
+### I/O
+- [Luvit](https://luvit.io/) - Asynchronous I/O for Lua
+- [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
+
+### Data structures
+- [lua-users: Data Structures](http://lua-users.org/wiki/DataStructures) - Here are implementations of various data structures in Lua or related discussions.
 
 ### Web Frameworks
 - [Lapis](http://leafo.net/lapis/) - A web framework for Lua or MoonScript, powered by OpenResty
@@ -62,6 +94,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### GUI
 [Yue](https://libyue.com/) - A library for creating native cross-platform GUI apps.
+[wxLua](http://wxlua.sourceforge.net/) - a wrapper around the [wxWidgets](http://www.wxwidgets.org/) cross-platform C++ GUI library.
+
+### Debugging
+- [MobDebug](https://github.com/pkulchenko/MobDebug) - Remote debugger for Lua.
+- [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 
 ### Utilities and Libraries
 - [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
@@ -74,10 +111,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Penlight](https://github.com/stevedonovan/Penlight) - A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management. Inspired by the Python standard libraries.
 - [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
-
-### Debugging
-- [MobDebug](https://github.com/pkulchenko/MobDebug) - Remote debugger for Lua.
-- [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 
 ### Network
 [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://rawgit.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
@@ -106,10 +139,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
-### C ANSI standard
-[lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
-
-### C POSIX (Portable Operating System Interface) library
+### POSIX
 [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
 
 [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - System, Networking and I/O library for Lua.
@@ -120,10 +150,12 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua.Space](http://lua.space/) [[RSS Feed]](http://feeds.feedburner.com/Luaspace) - The Lua Community Blog
 - [lua nova](https://luanova.org/) - welcome to the moon
 
-### Frequently Asked Questions (FAQ)
-- [Lua FAQ](http://www.lua.org/faq.html) - official Lua FAQ
-- [Lua-Users FAQ](http://lua-users.org/wiki/LuaFaq) - unofficial Lua FAQ, it is maintained by the Lua community.
-- [uFAQ](http://www.luafaq.org/) - Lua Unofficial FAQ
+### Articles and publications
+- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
+- [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
+- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
+- [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
+- [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
 
 ### Guides / Tutorials
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - The official book first edition was aimed at Lua 5.0 and remains largely relevant.
@@ -133,9 +165,12 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [LuaGuide](https://github.com/davisdude/LuaGuide/blob/master/LuaGuide.md) - A guide to help people learn Lua
 - [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/) - Learn Lua in 15 Minutes
 - [Lua for Programmers](http://ebens.me/2012/08/27/lua-for-programmers-part-1) - Language Essentials, Data and Standard Libraries, More Advanced Concepts and Tips and Tricks.
-- [Phrogz: Learning Lua](http://phrogz.net/lua/index.html) - Lua versus JavaScript, Referenced Values, Metatables, and Simple Inheritance, and Pseudo-OOP Syntax and Scope.
-- [Curlie: Lua](https://curlie.org/Computers/Programming/Languages/Lua/) - Collection of sites about Lua
-- [Lua Tutorials and Courses](https://hackr.io/tutorials/learn-lua) - Top about Tutorials and Courses
+- [Phrogz: Learning Lua](http://phrogz.net/lua/index.html) - Learning Lua/From JS, Referenced Values, Metatables, and Simple Inheritance, and Pseudo-OOP Syntax and Scope.
+
+### Frequently Asked Questions (FAQ)
+- [Lua FAQ](http://www.lua.org/faq.html) - official Lua FAQ
+- [Lua-Users FAQ](http://lua-users.org/wiki/LuaFaq) - unofficial Lua FAQ, it is maintained by the Lua community.
+- [uFAQ](http://www.luafaq.org/) - Lua Unofficial FAQ
 
 ### Complementary lists
 - [awesome-lua](https://github.com/LewisJEllis/awesome-lua) - A curated list of quality Lua packages and resources.
@@ -145,6 +180,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [awesome-love2d](https://github.com/love2d-community/awesome-love2d) - A list like this one, but focused on game dev and the LÖVE platform.
 - [Where Lua is Used](https://sites.google.com/site/marbux/home/where-lua-is-used) - A comprehensive list of stand-alone programs written in or extensible using Lua.
 - [Where LuaJIT is Used](http://wiki.luajit.org/where-luajit-is-used) - Embeds, Supports, Implemented With LuaJIT
+- [Curlie: Lua](https://curlie.org/Computers/Programming/Languages/Lua/) - Collection of sites about Lua
+- [Lua Tutorials and Courses](https://hackr.io/tutorials/learn-lua) - Top about Tutorials and Courses
 - [Topics/Lua](https://github.com/topics/lua) - See more topics about Lua
 - [Topics/LuaJIT](https://github.com/topics/luajit) - See more topics about LuaJIT
 
