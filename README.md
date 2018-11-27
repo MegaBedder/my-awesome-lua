@@ -39,6 +39,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
   - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
   - [ljs](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
+  - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
   - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM. [[1]](https://www.lua.org/wshop17/fengari.html) [[2]](https://www.youtube.com/watch?v=xrLIgmd8xik)
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
@@ -57,7 +58,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Orbit](http://keplerproject.github.io/orbit/) - an MVC web framework for Lua, based on WSAPI. [[1]](https://luanova.org/orbit1-2/)
 
 ### GUI
-[Yue](https://github.com/yue/yue) - A library for creating native cross-platform GUI apps.
+[Yue](https://libyue.com/) - A library for creating native cross-platform GUI apps.
 
 ### Utilities and Libraries
 - [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
@@ -108,14 +109,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### C POSIX (Portable Operating System Interface) library
 [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
 
-[Lrexlib-POSIX](https://luarocks.org/modules/rrt/lrexlib-posix) - Lua binding of the POSIX regular expression library.
-
-[nixio](https://luarocks.org/modules/luarocks/nixio) - System, Networking and I/O library for Lua.
+[lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - System, Networking and I/O library for Lua.
 
 > is a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support.
-
-* [lua-nixio](https://github.com/jow-/lua-nixio)
-* [nixio [fork]](https://github.com/Neopallium/nixio)
 
 ### Blogs / Sites
 - [Lua.Space](http://lua.space/) [[RSS Feed]](http://feeds.feedburner.com/Luaspace) - The Lua Community Blog
@@ -134,6 +130,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [LuaGuide](https://github.com/davisdude/LuaGuide/blob/master/LuaGuide.md) - A guide to help people learn Lua
 - [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/) - Learn Lua in 15 Minutes
 - [Lua for Programmers](http://ebens.me/2012/08/27/lua-for-programmers-part-1) - Language Essentials, Data and Standard Libraries, More Advanced Concepts and Tips and Tricks.
+- [Phrogz: Learning Lua](http://phrogz.net/lua/index.html) - Lua versus JavaScript, Referenced Values, Metatables, and Simple Inheritance, and Pseudo-OOP Syntax and Scope.
 - [Curlie: Lua](https://curlie.org/Computers/Programming/Languages/Lua/) - Collection of sites about Lua
 - [Lua Tutorials and Courses](https://hackr.io/tutorials/learn-lua) - Top about Tutorials and Courses
 
