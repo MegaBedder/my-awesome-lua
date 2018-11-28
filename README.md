@@ -82,14 +82,15 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### I/O
 - [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - System, Networking and I/O library for Lua.
-
 > is a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support.
 
+- [LuaSys](https://github.com/tnodir/luasys) - a portable Lua library providing access to system and networking functions.
 - [Luvit](https://luvit.io/) - Asynchronous I/O for Lua
 - [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua
 - [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
 
 ### Data structures
+- [Tuple](https://luarocks.org/modules/maia/tuple) - Tuple of Values for Lua.
 - [lua-users: Data Structures](http://lua-users.org/wiki/DataStructures) - Here are implementations of various data structures in Lua or related discussions.
 
 ### Web Frameworks
@@ -113,6 +114,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Strictness](https://github.com/Yonaba/strictness) - a small module to track access and assignment to undefined variables in Lua
 - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
 - [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
+- [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
+- [Luno](https://luarocks.org/modules/echiesse/luno) - General purpose libraries for Lua.
 - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
 - [lua-stdlib](https://github.com/lua-stdlib/lua-stdlib/) - General Lua libraries
 - [Penlight](https://github.com/stevedonovan/Penlight) - A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management. Inspired by the Python standard libraries.
