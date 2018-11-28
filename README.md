@@ -61,7 +61,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
-### Dialects / Lua Derivative (Languages based on Lua)
+### Dialects / Lua Derivative
+> Languages based on Lua. These languages are based on the Lua implementation (e.g. adapted VM).
 - [Agena](http://agena.sourceforge.net/) - based on Lua 5 C source, but has significant syntax differences
 - [SquiLu](https://github.com/mingodad/squilu) - A mix between [Squirrel](http://squirrel-lang.org/) and Lua, trying to get the best of both. Squirrel scripting language modified with lua libraries
 - [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
