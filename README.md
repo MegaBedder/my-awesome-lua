@@ -1,4 +1,4 @@
-# My Awesome Lua List [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# My Awesome Lua List [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/master/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 > A curated list of quality Lua [packages](#packages) and [resources](#resources).
 
@@ -14,6 +14,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Web Frameworks](#web-frameworks)
 - [GUI](#gui)
 - [Debugging](#debugging)
+- [Crypto]()
 - [Utilities and Libraries](#utilities-and-libraries)
 - [Network](#network)
 - [Events & threads](#events--threads)
@@ -79,10 +80,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Build Tools and Standalone Makers
 - [srlua](https://github.com/LuaDist/srlua) - A tool for building self-running Lua programs.
 - [luastatic](https://github.com/ers35/luastatic) - Build a standalone executable from a Lua program.
+- [Luabuild](https://github.com/stevedonovan/luabuild) - A Custom Lua 5.2 Builder (tool to build a static Lua with bundled libraries)
+- [slua](https://github.com/philanc/slua) - A static build of Lua 5.3 for Linux, with a few extension libraries.
 
 ### I/O
-- [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - System, Networking and I/O library for Lua.
-> is a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support.
+- [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support. System, Networking and I/O library for Lua.
 
 - [LuaSys](https://github.com/tnodir/luasys) - a portable Lua library providing access to system and networking functions.
 - [Luvit](https://luvit.io/) - Asynchronous I/O for Lua
@@ -108,6 +110,15 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 - [lua-marshal](https://github.com/richardhundt/lua-marshal) - fast table serialization for Lua
 
+### Cryptographic
+- [lua-argon2](https://github.com/thibaultCha/lua-argon2) - the Argon2 password hashing function. Compatible with Lua 5.x and LuaJIT.
+- [PLC](https://github.com/philanc/plc) (Pure Lua Crypto) - A small collection of crpytographic functions, and related utilities, implemented in pure Lua (version 5.3 or above)
+- [Luazen](https://github.com/philanc/luazen) - a small library with various encoding, compression and cryptographic functions. All the functions work on strings, there is no stream or chunked more complex interfaces.
+- [luatweetnacl](https://github.com/philanc/luatweetnacl) - Lua binding to the NaCl ("Tweet" version) crypto library
+
+### File System
+- [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
+
 ### Utilities and Libraries
 - [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
 - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
@@ -120,10 +131,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-stdlib](https://github.com/lua-stdlib/lua-stdlib/) - General Lua libraries
 - [Penlight](https://github.com/stevedonovan/Penlight) - A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management. Inspired by the Python standard libraries.
 - [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
+- [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
 ### Network
-- [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://rawgit.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
+- [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
 
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
 
@@ -136,18 +148,37 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
 
 ### Events & threads
+> for concurrent programming
+
 - [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
+
+- [luaproc](https://github.com/askyrme/luaproc) - multi-threading library
 
 - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
 
 - [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
 
+### [Command Line](https://luarocks.org/labels/commandline) Specific
+- [Ncurses](https://github.com/lcurses/lcurses) - Ncurses Terminal Screen Control
+
+- [Readline](https://luarocks.org/modules/peterbillam/readline) - Interface to the readline library
+
+- [linenoise](https://github.com/philanc/slua/tree/master/src/linenoise) - A small self-contained alternative to readline and libedit.
+
+- [ljlinenoise](https://luarocks.org/modules/fperrad/ljlinenoise) - a pure LuaJIT port of [linenoise](https://github.com/antirez/linenoise), a small alternative to readline and libedit.
+
 ### Native OS APIs
 
 ### Windows-specific
-- [winapi](https://luapower.com/winapi) - Windows, common controls and dialogs, message loop and system APIs.
+- [winapi](https://github.com/stevedonovan/winapi) - Minimal Windows API
+
+- [luapower/winapi](https://luapower.com/winapi) - Windows, common controls and dialogs, message loop and system APIs for LuaJIT.
 
 ### UNIX
+- [ljsyscall](https://github.com/justincormack/ljsyscall) - Unix system calls for LuaJIT
+
+- [minisock](https://github.com/philanc/minisock) - a minimal Lua socket library for unix / tcp / udp connections. The API is very close to the standard Unix system calls.
+
 - [lunix](https://luarocks.org/modules/daurnimator/lunix) - Bindings to common Unix system APIs, striving for thread-safety.
 
 - [luaunix](https://luarocks.org/modules/mbalmer/luaunix) - A Lua Binding for Selected Unix functions and System Calls
@@ -157,6 +188,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### POSIX
 - [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
 
+-----------------
 
 ### Blogs / Sites
 - [Lua.Space](http://lua.space/) [[RSS Feed]](http://feeds.feedburner.com/Luaspace) - The Lua Community Blog
