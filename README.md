@@ -14,7 +14,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Web Frameworks](#web-frameworks)
 - [GUI](#gui)
 - [Debugging](#debugging)
-- [Crypto]()
+- [Cryptographic](#cryptographic)
 - [Utilities and Libraries](#utilities-and-libraries)
 - [Network](#network)
 - [Events & threads](#events--threads)
@@ -87,7 +87,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support. System, Networking and I/O library for Lua.
 
 - [LuaSys](https://github.com/tnodir/luasys) - a portable Lua library providing access to system and networking functions.
-- [Luvit](https://luvit.io/) - Asynchronous I/O for Lua
+- [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
+- [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
 - [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua
 - [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
 
@@ -152,14 +153,22 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 - [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
 
-- [luaproc](https://github.com/askyrme/luaproc) - multi-threading library
+- [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
+
+- [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library
+
+- [Lua Lanes](https://github.com/LuaLanes/lanes) - a lightweight, native, lazy evaluating multithreading library for Lua 5.1 to 5.4.
+
+- [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
 
 - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
 
 - [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
 
+- [lua-users: MultiTasking](http://lua-users.org/wiki/MultiTasking) - This page contains links and/or discussions related to multitasking/multithreading/parallelization in Lua.
+
 ### [Command Line](https://luarocks.org/labels/commandline) Specific
-- [Ncurses](https://github.com/lcurses/lcurses) - Ncurses Terminal Screen Control
+- [lcurses](https://github.com/lcurses/lcurses) - curses Terminal Screen Control
 
 - [Readline](https://luarocks.org/modules/peterbillam/readline) - Interface to the readline library
 
@@ -168,6 +177,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [ljlinenoise](https://luarocks.org/modules/fperrad/ljlinenoise) - a pure LuaJIT port of [linenoise](https://github.com/antirez/linenoise), a small alternative to readline and libedit.
 
 ### Native OS APIs
+
+### POSIX
+- [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
 
 ### Windows-specific
 - [winapi](https://github.com/stevedonovan/winapi) - Minimal Windows API
@@ -185,9 +197,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 - [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
-### POSIX
-- [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
-
 -----------------
 
 ### Blogs / Sites
@@ -197,7 +206,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Articles and publications
 - [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
 - [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
-- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
 - [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
 - [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
 
