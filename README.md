@@ -30,25 +30,15 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 
 ### Implementations, Interpreters, and Bindings
-### Major implementations
 - [Lua](http://www.lua.org/download.html) - Lua's original ANSI C interpreter.
   - [Lua Repo](https://github.com/lua/lua) - The official Lua repo, as seen by the Lua team, mirrored to GitHub.
-- [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
-  - [Typed Lua + OO Support](https://github.com/kevinclancy/typedlua) - A Class System for Typed Lua
-  - [Typed Lua + IDE Support](https://gitlab.com/martanne/typedlua/tree/visitor)
-- [Titan](http://titan-lang.org) - a programming language, designed to be a statically-typed, ahead-of-time compiled sister language to Lua.
-- [Pallene](https://github.com/pallene-lang/pallene) (a fork of the Titan) - a statically typed, ahead-of-time-compiled sister language to Lua, with a focus on performance.
-- [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
-- [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
-- [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
-- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
-- [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on, and extends, Lua (and LuaJIT VM) with features geared more to programming in the large.
-- [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
-- [Firth](https://github.com/IonoclastBrigham/firth) - A simple Forth-like language intended for DSL creation, implemented in Lua. [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/)
+
+### Compiles to Lua
 - [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 - [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
-- To Web (JS, asm.js, WASM)
+
+### Compiles to JS, asm.js and WASM for Browser
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
   - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
@@ -61,18 +51,39 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
   - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
   - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
+
+### Dialects, flavors and implementations
+- [Titan](http://titan-lang.org) - a programming language, designed to be a statically-typed, ahead-of-time compiled sister language to Lua.
+- [Pallene](https://github.com/pallene-lang/pallene) (a fork of the Titan) - a statically typed, ahead-of-time-compiled sister language to Lua, with a focus on performance.
+- [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
+- [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
+- [Firth](https://github.com/IonoclastBrigham/firth) [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/) - A simple Forth-like language intended for DSL creation, implemented in Lua.
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
-### Dialects / Lua Derivative
-> Languages based on Lua. These languages are based on the Lua implementation (e.g. adapted VM).
+### Lua 5
 - [Agena](http://agena.sourceforge.net/) - based on Lua 5 C source, but has significant syntax differences
 - [SquiLu](https://github.com/mingodad/squilu) - A mix between [Squirrel](http://squirrel-lang.org/) and Lua, trying to get the best of both. Squirrel scripting language modified with lua libraries
-- [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
-- [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
 - [GSL Shell](https://www.nongnu.org/gsl-shell/) - an interactive command line interface that gives easy access to a collection of numeric algorithms and functions based on the GNU Scientific Library (GSL).
+
+### Lua 5.1
+- [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
+- [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
+- [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
+- [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
+  - [Typed Lua + OO Support](https://github.com/kevinclancy/typedlua) - A Class System for Typed Lua
+  - [Typed Lua + IDE Support](https://gitlab.com/martanne/typedlua/tree/visitor)
+- [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on a [modified version](https://github.com/richardhundt/tvmjit) of the LuaJIT VM with features geared more to programming in the large.
+- [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
+
+### Lua 5.2
 - [Killa](https://github.com/ex/Killa): a scripting language based in Lua 5.2 with a JavaScript-like syntax
+
+### Lua 5.3
+> Languages based on Lua. These languages are based on the Lua implementation (e.g. adapted VM).
 - [Ravi](https://github.com/dibyendumajumdar/ravi) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
+- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
+
 
 ### Distribution
 - [Lua Binaries](http://luabinaries.sourceforge.net/) - a distribution of the Lua libraries and executables compiled for several platforms.
