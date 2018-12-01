@@ -15,8 +15,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [GUI](#gui)
 - [Debugging](#debugging)
 - [Cryptographic](#cryptographic)
+- [Programming Paradigms](#programming-paradigms)
 - [Libraries](#libraries)
 - [Utilities](#utilities)
+- [Miscellaneous](#miscellaneous)
 - [Network](#network)
 - [Events & threads](#events--threads)
 - [Native OS APIs](#native-os-apis)
@@ -28,29 +30,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Guides / Tutorials](#guides--tutorials)
 - [Complementary lists](#complementary-lists)
 
+-----------------
 
 ### Implementations, Interpreters, and Bindings
 - [Lua](http://www.lua.org/download.html) - Lua's original ANSI C interpreter.
   - [Lua Repo](https://github.com/lua/lua) - The official Lua repo, as seen by the Lua team, mirrored to GitHub.
-
-### Compiles to Lua
-- [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
-- [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
-- [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
-
-### Compiles to JS, asm.js and WASM for Browser
-  - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
-  - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
-  - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
-  - [Starlight](http://starlight.paulcuth.me.uk/) - A Lua to ECMAScript 6 transpiler.
-  - [lua5.1.js](https://github.com/logiceditor-com/lua5.1.js) - Lua 5.1, built with emscripten, with low-level API
-  - [glua](https://github.com/fiatjaf/glua) - a Lua VM written in Go, to Javascript.
-  - [ljs](http://code.matthewwild.co.uk/ljs) [[fork]](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
-  - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
-  - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM.
-  - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
-  - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
-  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
 
 ### Dialects, flavors and implementations
 - [Titan](http://titan-lang.org) - a programming language, designed to be a statically-typed, ahead-of-time compiled sister language to Lua.
@@ -67,7 +51,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Lua 5.1
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
-- [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
+  - [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
 - [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
 - [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
   - [Typed Lua + OO Support](https://github.com/kevinclancy/typedlua) - A Class System for Typed Lua
@@ -79,10 +63,28 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Killa](https://github.com/ex/Killa): a scripting language based in Lua 5.2 with a JavaScript-like syntax
 
 ### Lua 5.3
-> Languages based on Lua. These languages are based on the Lua implementation (e.g. adapted VM).
+- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
 - [Ravi](https://github.com/dibyendumajumdar/ravi) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
-- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
+
+### Compiles to Lua
+- [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua.
+- [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
+- [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
+
+### Compiles to JS, asm.js and WASM for Browser
+  - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
+  - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
+  - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
+  - [Starlight](http://starlight.paulcuth.me.uk/) - A Lua to ECMAScript 6 transpiler.
+  - [lua5.1.js](https://github.com/logiceditor-com/lua5.1.js) - Lua 5.1, built with emscripten, with low-level API
+  - [glua](https://github.com/fiatjaf/glua) - a Lua VM written in Go, to Javascript.
+  - [ljs](http://code.matthewwild.co.uk/ljs) [[fork]](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
+  - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
+  - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM.
+  - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
+  - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
+  - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
 
 
 ### Distribution
@@ -92,7 +94,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Package Managers
 - [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", public rock repository and website.
 - [LuaDist](http://luadist.org/) -  a multi-platform package management system that aims to provide both source and binary repository of modules for Lua.
-- [LuaPlus](http://luaplus.org) - Full LuaPlus distribution for Windows
+- [LuaPlus](http://luaplus.org) - Full LuaPlus distribution (fork of Lua 5.1) for Windows
 - [ULua](http://ulua.io/) - Universal Lua Distribution
 - [LuaPower](https://luapower.com/) - the LuaJIT distribution for Windows, Linux and OS X
 - [Lit](https://github.com/luvit/lit/) [[web]](http://luvit.io/lit.html) - Toolkit for the ``Luvit`` ecosystem
@@ -108,6 +110,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [luastatic](https://github.com/ers35/luastatic) - Build a standalone executable from a Lua program.
 - [Luabuild](https://github.com/stevedonovan/luabuild) - A Custom Lua 5.2 Builder (tool to build a static Lua with bundled libraries)
 - [slua](https://github.com/philanc/slua) - A static build of Lua 5.3 for Linux, with a few extension libraries.
+
+-----------------
 
 ### I/O
 - [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support. System, Networking and I/O library for Lua.
@@ -146,7 +150,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### File System
 - [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
 
-### Programming Paradigm
+### Programming Paradigms
 - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
 - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
 - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
