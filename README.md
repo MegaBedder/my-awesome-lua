@@ -24,10 +24,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Native OS APIs](#native-os-apis)
 
 ## Resources
-- [Articles and publications](#articles-and-publications)
 - [Blogs / Sites](#blogs--sites)
-- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
+- [Articles and publications](#articles-and-publications)
 - [Guides / Tutorials](#guides--tutorials)
+- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 - [Complementary lists](#complementary-lists)
 
 -----------------
@@ -41,7 +41,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Pallene](https://github.com/pallene-lang/pallene) (a fork of the Titan) - a statically typed, ahead-of-time-compiled sister language to Lua, with a focus on performance.
 - [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
 - [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
-- [Firth](https://github.com/IonoclastBrigham/firth) [[1]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/) - A simple Forth-like language intended for DSL creation, implemented in Lua.
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
 ### Lua 5
@@ -58,6 +57,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Typed Lua + IDE Support](https://gitlab.com/martanne/typedlua/tree/visitor)
 - [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on a [modified version](https://github.com/richardhundt/tvmjit) of the LuaJIT VM with features geared more to programming in the large.
 - [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
+- [Firth](https://github.com/IonoclastBrigham/firth) [[BLOG]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/) - A simple Forth-like language intended for DSL creation, implemented in Lua.
 
 ### Lua 5.2
 - [Killa](https://github.com/ex/Killa): a scripting language based in Lua 5.2 with a JavaScript-like syntax
@@ -72,7 +72,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 
-### Compiles to JS, asm.js and WASM for Browser
+### Compiles to JS, asm.js or WASM for Browser
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
   - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
@@ -85,7 +85,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
   - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
   - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
-
 
 ### Distribution
 - [Lua Binaries](http://luabinaries.sourceforge.net/) - a distribution of the Lua libraries and executables compiled for several platforms.
@@ -151,13 +150,18 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
 
 ### Programming Paradigms
-- [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
-- [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
-- [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
-- [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
-- [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
-- [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
-- [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
+- Functional programming
+  - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
+  - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
+
+- Object-oriented programming
+  - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
+  - [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
+  - [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
+
+- Reactive programming
+  - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
+  - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
 
 ### Libraries
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
@@ -175,6 +179,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
 
 ### Network
+- [lua-http](https://luarocks.org/modules/daurnimator/http) [[Video]](https://www.youtube.com/watch?v=OeABiyUlAao) - HTTP Library for Lua. Supports HTTP(S) 1.0, 1.1 and 2.0; client and server.
 - [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
