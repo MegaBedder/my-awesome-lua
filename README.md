@@ -85,7 +85,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### I/O
 - [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support. System, Networking and I/O library for Lua.
-
 - [LuaSys](https://github.com/tnodir/luasys) - a portable Lua library providing access to system and networking functions.
 - [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
 - [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
@@ -120,22 +119,34 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### File System
 - [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
 
-### Utilities and Libraries
-- [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
+### Programming Paradigm
+- [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
 - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
-- [Strictness](https://github.com/Yonaba/strictness) - a small module to track access and assignment to undefined variables in Lua
 - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
 - [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
 - [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
-- [Luno](https://luarocks.org/modules/echiesse/luno) - General purpose libraries for Lua.
-- [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
-- [lua-stdlib](https://github.com/lua-stdlib/lua-stdlib/) - General Lua libraries
-- [Penlight](https://github.com/stevedonovan/Penlight) - A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management. Inspired by the Python standard libraries.
-- [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
+- [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
+- [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
+
+### Libraries
 - [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
+### Utilities
+- [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
+- [Strictness](https://github.com/Yonaba/strictness) - a small module to track access and assignment to undefined variables in Lua
+
+### Miscellaneous
+- [Luno](https://luarocks.org/modules/echiesse/luno) - General purpose libraries for Lua.
+- [lua-stdlib](https://github.com/lua-stdlib/lua-stdlib/) - General Lua libraries
+- [Penlight](https://github.com/stevedonovan/Penlight) - A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management. Inspired by the Python standard libraries.
+- [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
+
 ### Network
+- [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
+
+- [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
+
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
 
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
@@ -218,6 +229,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/) - Learn Lua in 15 Minutes
 - [Lua for Programmers](http://ebens.me/2012/08/27/lua-for-programmers-part-1) - Language Essentials, Data and Standard Libraries, More Advanced Concepts and Tips and Tricks.
 - [Phrogz: Learning Lua](http://phrogz.net/lua/index.html) - Learning Lua/From JS, Referenced Values, Metatables, and Simple Inheritance, and Pseudo-OOP Syntax and Scope.
+- [Learn Lua the Hard Way](http://www.phailed.me/2011/02/learn-lua-the-hard-way-1/) - a person has never programmed before at all
 
 ### Frequently Asked Questions (FAQ)
 - [Lua FAQ](http://www.lua.org/faq.html) - official Lua FAQ
