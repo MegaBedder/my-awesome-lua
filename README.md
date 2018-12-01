@@ -15,7 +15,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [GUI](#gui)
 - [Debugging](#debugging)
 - [Cryptographic](#cryptographic)
-- [Utilities and Libraries](#utilities-and-libraries)
+- [Libraries](#libraries)
+- [Utilities](#utilities)
 - [Network](#network)
 - [Events & threads](#events--threads)
 - [Native OS APIs](#native-os-apis)
@@ -73,9 +74,23 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Ravi](https://github.com/dibyendumajumdar/ravi) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
 
+### Distribution
+- [Lua Binaries](http://luabinaries.sourceforge.net/) - a distribution of the Lua libraries and executables compiled for several platforms.
+- [LuaWiMix](https://github.com/tDwtp/LuaWiMix) - A Lua distribution similar to LuaForWindows without anything but ilua, but with support for Lua 5.1 5.2 and 5.3 including optional luarocks and a switching mechanism.
+
 ### Package Managers
-- [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", plus public rock repository and website.
-- [Lit](https://github.com/luvit/lit/) [[web]](http://luvit.io/lit.html) - Package Manager for the Luvit ecosystem
+- [LuaRocks](https://luarocks.org/) - De-facto tool for installing Lua modules as packages called "rocks", public rock repository and website.
+- [LuaDist](http://luadist.org/) -  a multi-platform package management system that aims to provide both source and binary repository of modules for Lua.
+- [LuaPlus](http://luaplus.org) - Full LuaPlus distribution for Windows
+- [ULua](http://ulua.io/) - Universal Lua Distribution
+- [LuaPower](https://luapower.com/) - the LuaJIT distribution for Windows, Linux and OS X
+- [Lit](https://github.com/luvit/lit/) [[web]](http://luvit.io/lit.html) - Toolkit for the ``Luvit`` ecosystem
+
+### Batteries Included
+- [Lua for Windows](https://github.com/rjpcomputing/luaforwindows) - a 'batteries included environment' for the Lua scripting language on Windows.
+- [UFO - Un Finished Object](https://github.com/malkia/ufo) - a portable distribution of LuaJIT with precompiled binaries, libraries and FFI bindings
+- [NekoLua](https://github.com/quinsmpang/NekoLua) - A distribution of Lua customized
+- [Omnia](https://github.com/tongson/omnia) - Compile Lua, Fennel and MoonScript source code into standalone executables. Using ``luastatic``.
 
 ### Build Tools and Standalone Makers
 - [srlua](https://github.com/LuaDist/srlua) - A tool for building self-running Lua programs.
@@ -90,6 +105,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
 - [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua
 - [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
+- [binarystream](https://luarocks.org/modules/Tarik02/binarystream) - Lua library to work with binary data (needs ffi support)
 
 ### Data structures
 - [Tuple](https://luarocks.org/modules/maia/tuple) - Tuple of Values for Lua.
@@ -129,6 +145,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
 
 ### Libraries
+- [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
 - [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
@@ -144,47 +161,30 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Network
 - [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
-
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
-
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
-
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
-
 - [llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
-
 - [lua-resty-socket](https://luarocks.org/modules/thibaultcha/lua-resty-socket) - A module offering interoperability between the LuaSocket and cosocket APIs
-
 - [lua-net](https://luarocks.org/modules/rayaman/lua-net) - Lua networking library that wraps around lua-socket to make networking easy.
-
 - [dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
 
 ### Events & threads
 > for concurrent programming
 
 - [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
-
 - [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
-
 - [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library
-
 - [Lua Lanes](https://github.com/LuaLanes/lanes) - a lightweight, native, lazy evaluating multithreading library for Lua 5.1 to 5.4.
-
 - [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
-
 - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
-
 - [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
-
 - [lua-users: MultiTasking](http://lua-users.org/wiki/MultiTasking) - This page contains links and/or discussions related to multitasking/multithreading/parallelization in Lua.
 
 ### [Command Line](https://luarocks.org/labels/commandline) Specific
 - [lcurses](https://github.com/lcurses/lcurses) - curses Terminal Screen Control
-
 - [Readline](https://luarocks.org/modules/peterbillam/readline) - Interface to the readline library
-
 - [linenoise](https://github.com/philanc/slua/tree/master/src/linenoise) - A small self-contained alternative to readline and libedit.
-
 - [ljlinenoise](https://luarocks.org/modules/fperrad/ljlinenoise) - a pure LuaJIT port of [linenoise](https://github.com/antirez/linenoise), a small alternative to readline and libedit.
 
 ### Native OS APIs
@@ -194,18 +194,13 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Windows-specific
 - [winapi](https://github.com/stevedonovan/winapi) - Minimal Windows API
-
 - [luapower/winapi](https://luapower.com/winapi) - Windows, common controls and dialogs, message loop and system APIs for LuaJIT.
 
 ### UNIX
 - [ljsyscall](https://github.com/justincormack/ljsyscall) - Unix system calls for LuaJIT
-
 - [minisock](https://github.com/philanc/minisock) - a minimal Lua socket library for unix / tcp / udp connections. The API is very close to the standard Unix system calls.
-
 - [lunix](https://luarocks.org/modules/daurnimator/lunix) - Bindings to common Unix system APIs, striving for thread-safety.
-
 - [luaunix](https://luarocks.org/modules/mbalmer/luaunix) - A Lua Binding for Selected Unix functions and System Calls
-
 - [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
 -----------------
