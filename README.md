@@ -72,7 +72,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 
-### Compiles to JS, asm.js or WASM for Browser
+### Compiles to JS, asm.js or WebAssembly for Browser
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
   - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
   - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
@@ -150,15 +150,17 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
 
 ### Programming Paradigms
-- Functional programming
-  - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
-  - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
-
 - Object-oriented programming
   - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
   - [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
   - [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
-
+- Event-driven programming
+  - [Luvent](https://github.com/ejmr/Luvent) - Simple Event Library for Lua
+  - [lua_async](https://github.com/imwithye/lua_async) - Asynchronous and event driven programming in lua
+  - [toynet](https://github.com/yongkangchen/toynet) - A simple event-driven I/O for Lua, coroutine based.
+- Functional programming
+  - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
+  - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
 - Reactive programming
   - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
@@ -185,6 +187,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-http](https://luarocks.org/modules/daurnimator/http) [[Video]](https://www.youtube.com/watch?v=OeABiyUlAao) - HTTP Library for Lua. Supports HTTP(S) 1.0, 1.1 and 2.0; client and server.
 - [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
+- [Turbo](https://github.com/kernelsauce/turbo) - a framework built for LuaJIT 2 to simplify the task of building fast and scalable network applications. It uses a event-driven, non-blocking, no thread design to deliver excellent performance and minimal footprint to high-load applications.
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
 - [llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
@@ -235,6 +238,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Articles and publications
 - [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
 - [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
+- [Interfacing Lua with C](https://ciel.im/posts/interfacing-lua-with-c/) - Lua provides an interface allowing to call C functions in Lua environment.
+- [Asynchronous and Event-driven Programming in Lua](https://ciel.im/posts/asynchronous_lua/) - This article demonstrates how to bind libuv API to Lua environment.
+- [Port Lua to Web Environment using WebAssembly (Wasm)](https://ciel.im/posts/port-lua-to-web-environment/) - using emscripten to compile Lua
 - [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
 - [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
 - [Embeddable scripting with Lua](https://www.ibm.com/developerworks/linux/library/l-lua/index.html) - Lua offers high-level abstraction without losing touch with the hardware
