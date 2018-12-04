@@ -73,8 +73,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
 
 ### Compiles to JS, asm.js or WebAssembly for Browser
-  - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode compiler that generates ES5 JavaScript.
-  - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - The Lua VM, on the Web (using the asm.js subset of JavaScript)
+  - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode interpreter that generates ES5 JavaScript.
+  - [lua.vm.js](https://github.com/daurnimator/lua.vm.js) - Compile Lua via emscripten to asm.js. Originally by kripken (author of emscripten).
   - [Moonshine](http://moonshinejs.org/) - A lightweight Lua VM for the browser
   - [Starlight](http://starlight.paulcuth.me.uk/) - A Lua to ECMAScript 6 transpiler.
   - [lua5.1.js](https://github.com/logiceditor-com/lua5.1.js) - Lua 5.1, built with emscripten, with low-level API
@@ -82,6 +82,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [ljs](http://code.matthewwild.co.uk/ljs) [[fork]](https://github.com/humbletim/ljs) - Lua VM implemented in Javascript
   - [lua.js](https://github.com/mherkender/lua.js) - Translate Lua code into Javascript.
   - [Fengari](https://fengari.io/) - Lua VM for the browser. This approach is the only viable one to use Lua in the browser and interact with the DOM.
+  - [js2lua](https://github.com/wizzard0/js2lua) - Javascript to Lua translator, using LuaJIT
+  - [LuaJS](https://github.com/Doridian/LuaJS) - Lua VM running in Javascript (using emscripten)
   - [Lua.js](https://github.com/tdzl2003/lua.js) - a project that can convert lua code to javascript. lua.js is fully written by javascript
   - [Luwa](https://github.com/serprex/luwa) - Lua WASM JIT
   - [wasm_lua](https://github.com/vvanders/wasm_lua) - Lua VM running in a WASM environment
@@ -257,6 +259,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - The official book first edition was aimed at Lua 5.0 and remains largely relevant.
 - [Lua-Users: Lua Tutorial](http://lua-users.org/wiki/LuaTutorial) - This tutorial is aimed at all newcomers to the language Lua. We start off with where to find relevant introductory material and then progress to using the language with tutorials in the [TutorialDirectory)](http://lua-users.org/wiki/TutorialDirectory).
 - [TutorialsPoint.com: Lua Tutorial](https://www.tutorialspoint.com/lua/) - is designed for all those readers who are looking for a starting point to learn Lua. It has topics suitable for both beginners as well as advanced users.
+- [RIP Tutorial: Lua](https://riptutorial.com/lua) - Getting started with Lua
 - [The.Lua.Tutorial](http://luatut.com/) - An Introduction to Lua and The Crash Course to Lua.
 - [LuaGuide](https://github.com/davisdude/LuaGuide/blob/master/LuaGuide.md) - A guide to help people learn Lua
 - [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/) - Learn Lua in 15 Minutes
