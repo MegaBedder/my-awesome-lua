@@ -236,7 +236,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua nova](https://luanova.org/) - welcome to the moon
 
 ### Articles and publications
-- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext)
+- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext) - 2018
+- [Roberto Ierusalimschy • Publications](http://www.inf.puc-rio.br/~roberto/cvpub.html)
+- [Programming with Multiple Paradigms in Lua](http://www.inf.puc-rio.br/~roberto/docs/ry09-03.pdf)
 - [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
 - [Interfacing Lua with C](https://ciel.im/posts/interfacing-lua-with-c/) - Lua provides an interface allowing to call C functions in Lua environment.
 - [Asynchronous and Event-driven Programming in Lua](https://ciel.im/posts/asynchronous_lua/) - This article demonstrates how to bind libuv API to Lua environment.
@@ -245,6 +247,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
 - [Embeddable scripting with Lua](https://www.ibm.com/developerworks/linux/library/l-lua/index.html) - Lua offers high-level abstraction without losing touch with the hardware
 - [Embed Lua for scriptable apps](https://www.ibm.com/developerworks/linux/library/l-embed-lua/index.html) - Incorporate application scripting using a small language built for the job
+
+### Lua Workshop
+- Lua Workshop 2016
+  - [On the design of Lua](https://www.youtube.com/watch?v=QystqRlz6bw) - Roberto Ierusalimschy (PUC-Rio)
+- [Roberto Ierusalimschy • Talks](http://www.inf.puc-rio.br/~roberto/talks/index.html)
 
 ### Guides / Tutorials
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - The official book first edition was aimed at Lua 5.0 and remains largely relevant.
