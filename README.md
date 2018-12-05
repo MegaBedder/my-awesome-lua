@@ -37,8 +37,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Lua Repo](https://github.com/lua/lua) - The official Lua repo, as seen by the Lua team, mirrored to GitHub.
 
 ### Dialects, flavors and implementations
-- [Titan](http://titan-lang.org) [[Slides]](http://www.lua.org/wshop17/Gualandi.pdf) - a system programming language, designed to be a statically-typed, ahead-of-time (AOT) compiled sister language to Lua, focused on performance. It is designed to seemlessly interoperate with Lua.
-  - [Pallene](https://github.com/pallene-lang/pallene) [[Slides]](https://gligneul.github.io/luaworkshop2018/) - a statically typed, ahead-of-time (AOT) compiled sister language to Lua, with a focus on performance. Pallene is also designed to seamlessly interoperate with Lua.
 - [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
 - [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
@@ -63,8 +61,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Killa](https://github.com/ex/Killa): a scripting language based in Lua 5.2 with a JavaScript-like syntax
 
 ### Lua 5.3
+- [Titan](http://titan-lang.org) [[Slides]](http://www.lua.org/wshop17/Gualandi.pdf) - a system programming language, designed to be a statically-typed, ahead-of-time (AOT) compiled sister language to Lua, focused on performance. It is designed to seemlessly interoperate with Lua.
+  - [Pallene](https://github.com/pallene-lang/pallene) [[Slides]](https://gligneul.github.io/luaworkshop2018/) - a statically typed, ahead-of-time (AOT) compiled sister language to Lua, with a focus on performance. Pallene is also designed to seamlessly interoperate with Lua.
+- [Ravi](https://github.com/dibyendumajumdar/ravi) [[Slides]](http://www.lua.org/wshop15/Majumdar.pdf) [[Video]](https://www.youtube.com/watch?v=-ZOBHw1Mk2U) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
-- [Ravi](https://github.com/dibyendumajumdar/ravi) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
 
 ### Compiles to Lua
@@ -153,6 +153,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Debugging
 - [MobDebug](https://github.com/pkulchenko/MobDebug) - Remote debugger for Lua.
 - [clidebugger](https://github.com/ToddWegner/clidebugger) - A simple command line interface debugger for Lua 5.1 written in pure Lua.
+- [chrome-devtools-client](https://github.com/clear-code/lua-chrome-devtools-client) - Chrome DevTools client for Lua
 - [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 - [lua-marshal](https://github.com/richardhundt/lua-marshal) - fast table serialization for Lua
 
@@ -182,10 +183,16 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
 
 ### Libraries
+- [XMLua](https://github.com/clear-code/xmlua) [[Blog]](https://www.clear-code.com/blog/2017/12/25.html) - An user-friendly XML/HTML processing library for Lua based on libxml2
+- [luaexpat](https://github.com/tomasguisasola/luaexpat) [[Doc]](https://matthewwild.co.uk/projects/luaexpat/) - a SAX XML parser based on the Expat (a stream-oriented XML parser) library.
+- [LuaExpatUtils](https://github.com/stevedonovan/LuaExpatUtils) - Utilities for working with LOM XML Documents
+- [luapower/expat](https://github.com/luapower/expat) - A ffi binding for the Expat XML parser.
 - [lua-cjson](https://github.com/mpx/lua-cjson) - Lua CJSON is a fast JSON encoding/parsing module for Lua
 - [LPegLabel](https://github.com/sqmedeiros/lpeglabel) - a conservative extension of the ``LPeg`` library that provides an implementation of Parsing Expression Grammars (PEGs) with labeled failures.
 - [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
+- [LuaCS](https://github.com/clear-code/luacs) [[Blog]](https://www.clear-code.com/blog/2018/5/23.html) - a CSS Selectors parser library for Lua
+- [LuaWebDriver](https://github.com/clear-code/lua-web-driver) [[Blog]](https://www.clear-code.com/blog/2018/11/6.html) - This is a browser automation library using WebDriver API.
 - [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
@@ -200,7 +207,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Microlight](https://github.com/stevedonovan/microlight) - A little library of useful Lua functions, intended as the 'light' version of Penlight
 - [Carbon](https://github.com/lua-carbon/carbon) - a full suite intended to make Lua more semantic, expressive, and powerful. It aims to provide a set of functionality comparable to .NET, and runs on Lua 5.1 and LuaJIT on any platform.
 - [lua-ext](https://github.com/andrew-d/lua-ext) - Standard library / extensions for Lua. math, operator functions, execution platform, Set implementation for Lua, I/O on strings; instead of files.
-- [lua-apr](https://github.com/xolox/lua-apr) - Apache Portable Runtime binding for Lua. APR powers software  and makes the APR operating system interfaces available to Lua, serving as an extended standard library.
+- [lua-apr](https://github.com/xolox/lua-apr) - Apache Portable Runtime binding for Lua. APR powers software  and makes the APR operating system interfaces available to Lua, serving as an extended standard library, focus in Threads, Processes, Directories.
 - [lua-glib](https://bitbucket.org/darktjm/lua-glib/src/?at=master) [[Doc]](http://htmlpreview.github.io/?https://bitbucket.org/darktjm/lua-glib/raw/b8e99210f24587b25602009e575d70221552436e/lua-glib.html) - Yet another Lua-to-glib binding. This package wraps the GLib library fairly thinly. It is meant to be a portability and utility library.
 
 ### Network
