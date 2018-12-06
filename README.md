@@ -176,8 +176,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [StackTracePlus](https://github.com/ignacio/StackTracePlus) - Drop-in upgrade to Lua's stack traces which adds local context and improves readability.
 
 ### Testing
-[busted](http://olivinelabs.com/busted/) - BDD-style unit testing framework with great docs and Moonscript support.
-[luassert](https://github.com/Olivine-Labs/luassert) - Assertion library extending Lua's built-in assertions.
+- [busted](http://olivinelabs.com/busted/) - BDD-style unit testing framework with great docs and Moonscript support.
+- [luassert](https://github.com/Olivine-Labs/luassert) - Assertion library extending Lua's built-in assertions.
 
 ### Cryptographic
 - [lua-argon2](https://github.com/thibaultCha/lua-argon2) - the Argon2 password hashing function. Compatible with Lua 5.x and LuaJIT.
