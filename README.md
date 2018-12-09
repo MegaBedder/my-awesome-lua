@@ -10,18 +10,24 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Build Tools and Standalone Makers](#build-tools-and-standalone-makers)
 
 ## Packages
+- [Data structures](#data-structures)
+- [Programming Paradigms](#programming-paradigms)
 - [I/O](#io)
-- [Web Frameworks](#web-frameworks)
+- [CLI](#cli)
 - [GUI](#gui)
 - [Debugging](#debugging)
+- [Network](#network)
+- [Multithreading](#multithreading)
+- [Native OS APIs](#native-os-apis)
 - [Cryptographic](#cryptographic)
-- [Programming Paradigms](#programming-paradigms)
 - [Libraries](#libraries)
 - [Utilities](#utilities)
 - [Miscellaneous](#miscellaneous)
-- [Network](#network)
-- [Events & threads](#events--threads)
-- [Native OS APIs](#native-os-apis)
+
+## Projects
+- [Asynchronous I/O](#asynchronous-io)
+- [Web Frameworks](#web-frameworks)
+- [Web Browser](#web-broswer)
 
 ## Resources
 - [Blogs / Sites](#blogs--sites)
@@ -50,7 +56,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
   - [Typed Lua + OO Support](https://github.com/kevinclancy/typedlua) - A Class System for Typed Lua
   - [Typed Lua + IDE Support](https://gitlab.com/martanne/typedlua/tree/visitor)
-- [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1.
+- [Idle](http://idle.thomaslauer.com/) - At the core of Idle sits a tweaked and significantly enhanced version of Lua 5.1. Includes a GUI module, built from scratch; usable ("good enough") to create simple GUIs and dialog boxes. 
 - [Agena](http://agena.sourceforge.net/) - based on Lua 5.1 C source, but has significant syntax differences
 - [GSL Shell](https://www.nongnu.org/gsl-shell/) - an interactive command line interface that gives easy access to a collection of numeric algorithms and functions based on the GNU Scientific Library (GSL).
 - [Firth](https://github.com/IonoclastBrigham/firth) [[BLOG]](http://web.archive.org/web/20160305085519/http://blog.ionoclast.com/2015/05/firth-pre-alpha-1-a-forth-like-language-for-dsl-creation/) - A simple Forth-like language intended for DSL creation, implemented in Lua.
@@ -122,11 +128,13 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Textadept](https://foicica.com/textadept/) - A fast, minimalist, and remarkably extensible cross-platform text editor
 - [Howl Editor](https://howl.io/) - A general purpose, fast and lightweight editor with a keyboard-centric minimalistic user interface. Built on LuaJIT and fully programmable using Lua or Moonscript.
 - [SciTE](https://www.scintilla.org/SciTE.html) - a SCIntilla based Text Editor, with embedded Lua interpreter.
+
 -----------------
 
 ### Data structures
 > Tables in Lua are not a data structure; they are the data structure.
 - [Tuple](https://luarocks.org/modules/maia/tuple) - Tuple of Values for Lua.
+- [binarystream](https://luarocks.org/modules/Tarik02/binarystream) - Lua library to work with binary data (needs ffi support)
 - [lua-users: Data Structures](http://lua-users.org/wiki/DataStructures) - Here are implementations of various data structures in Lua or related discussions.
 
 ### Programming Paradigms
@@ -147,18 +155,12 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
 
+-----------------
+
 ### I/O
+- [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
 - [lua-nixio](https://github.com/jow-/lua-nixio) [[fork]](https://github.com/Neopallium/nixio) - a multi-platform library for IPv4, IPv6 and UNIX networking, POSIX user/group management, TLS support. System, Networking and I/O library for Lua.
 - [LuaSys](https://github.com/tnodir/luasys) - a portable Lua library providing access to system and networking functions.
-- [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
-- [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
-- [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua
-- [lunary](https://luarocks.org/modules/doub/lunary) - A binary format I/O framework for Lua.
-- [binarystream](https://luarocks.org/modules/Tarik02/binarystream) - Lua library to work with binary data (needs ffi support)
-
-### GUI
-- [Yue](https://libyue.com/) - A library for creating native cross-platform GUI apps.
-- [wxLua](http://wxlua.sourceforge.net/) - a wrapper around the [wxWidgets](http://www.wxwidgets.org/) cross-platform C++ GUI library.
 
 ### [CLI](https://luarocks.org/labels/commandline)
 - [lcurses](https://github.com/lcurses/lcurses) - curses Terminal Screen Control
@@ -166,40 +168,31 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [linenoise](https://github.com/philanc/slua/tree/master/src/linenoise) - A small self-contained alternative to readline and libedit.
 - [ljlinenoise](https://luarocks.org/modules/fperrad/ljlinenoise) - a pure LuaJIT port of [linenoise](https://github.com/antirez/linenoise), a small alternative to readline and libedit.
 
-### Debugging and Profiling
+### GUI
+- [Yue](https://libyue.com/) - A library for creating native cross-platform GUI apps.
+- [wxLua](http://wxlua.sourceforge.net/) - a wrapper around the [wxWidgets](http://www.wxwidgets.org/) cross-platform C++ GUI library.
+
+### Debugging
 - [MobDebug](https://github.com/pkulchenko/MobDebug) - Remote debugger for Lua.
 - [clidebugger](https://github.com/ToddWegner/clidebugger) - A simple command line interface debugger for Lua 5.1 written in pure Lua.
+- [inspect.lua](https://github.com/kikito/inspect.lua) - Human-readable representation of Lua tables
 - [chrome-devtools-client](https://github.com/clear-code/lua-chrome-devtools-client) - Chrome DevTools client for Lua
 - [lovebird](https://github.com/rxi/lovebird) - a Browser-based debug console. Originally made for LÖVE, but works in any project with LuaSocket support.
-- [luatrace](https://github.com/geoffleyland/luatrace) - Toolset for tracing/analyzing/profiling script execution and generating detailed reports.
-- [ProFi](https://github.com/mindreframer/ProFi.lua) - Simple profiler that works with LuaJIT and produces a report file.
-- [StackTracePlus](https://github.com/ignacio/StackTracePlus) - Drop-in upgrade to Lua's stack traces which adds local context and improves readability.
+- **Profiling & Tracing**
+  - [ProFi](https://github.com/mindreframer/ProFi.lua) - Simple profiler that works with LuaJIT and produces a report file.
+  - [luatrace](https://github.com/geoffleyland/luatrace) - Toolset for tracing/analyzing/profiling script execution and generating detailed reports.
+  - [StackTracePlus](https://github.com/ignacio/StackTracePlus) - Drop-in upgrade to Lua's stack traces which adds local context and improves readability.
 
 ### Testing
 - [busted](http://olivinelabs.com/busted/) - BDD-style unit testing framework with great docs and Moonscript support.
 - [luassert](https://github.com/Olivine-Labs/luassert) - Assertion library extending Lua's built-in assertions.
+- [Luacheck](https://github.com/mpeterv/luacheck) - A tool for linting and static analysis of Lua code.
 
 ### Cryptographic
 - [lua-argon2](https://github.com/thibaultCha/lua-argon2) - the Argon2 password hashing function. Compatible with Lua 5.x and LuaJIT.
 - [PLC](https://github.com/philanc/plc) (Pure Lua Crypto) - A small collection of crpytographic functions, and related utilities, implemented in pure Lua (version 5.3 or above)
 - [Luazen](https://github.com/philanc/luazen) - a small library with various encoding, compression and cryptographic functions. All the functions work on strings, there is no stream or chunked more complex interfaces.
 - [luatweetnacl](https://github.com/philanc/luatweetnacl) - Lua binding to the NaCl ("Tweet" version) crypto library
-
-### Database drivers
-- File systems (CVS, Flat-File)
-- Relational databases
-  - [LuaSQL](http://keplerproject.github.io/luasql/) - a simple interface from Lua to various DBMS. Connect to ODBC, ADO, Oracle, MySQL, SQLite, Firebird and PostgreSQL databases.
-  - [LuaDBI](https://github.com/mwild1/luadbi) - Multi-backend SQL database interface library for Lua. It is designed to provide a RDBMS agnostic API. Supports DB2, Oracle, MySQL, PostgreSQL and SQLite databases with native database drivers.
-  - [LuaSQLite3](http://lua.sqlite.org) - a Lua wrapper for the SQLite3 library.
-  - [PL/Lua](https://github.com/pllua/pllua) - an implementation of Lua as a loadable procedural language for PostgreSQL.
-  - [pgmoon](https://github.com/leafo/pgmoon) - a PostgreSQL client library written in Lua for OpenResty
-- NoSQL databases
-  - [Redis](https://github.com/nrk/redis-lua) - A Lua client library for the Redis key value storage system.
-  - [lredis](https://github.com/daurnimator/lredis) - a Redis client library for Lua
-
-### Message queues
-- [lua-zmq](https://github.com/Neopallium/lua-zmq) - a library which extends the standard socket interfaces with an abstraction of asynchronous message queues. Lua bindings to ZeroMQ version 2.1, 2.2 or 3.2.
-- [lzmq](https://github.com/zeromq/lzmq) - Lua binding to ZeroMQ version 3.2 or 4.x library. This library has C and FFI version of binding.
 
 ### File System
 - [luafilesystem](https://github.com/keplerproject/luafilesystem) - LuaFileSystem complements the set of file system functions offered by the standard Lua distribution.
@@ -216,56 +209,60 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-net](https://luarocks.org/modules/rayaman/lua-net) - Lua networking library that wraps around lua-socket to make networking easy.
 - [dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
 
-### Events & threads
-> Lua uses coroutines for [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_computing) 
+### Message queues
+- [lua-zmq](https://github.com/Neopallium/lua-zmq) - a library which extends the standard socket interfaces with an abstraction of asynchronous message queues. Lua bindings to ZeroMQ version 2.1, 2.2 or 3.2.
+- [lzmq](https://github.com/zeromq/lzmq) - Lua binding to ZeroMQ version 3.2 or 4.x library. This library has C and FFI version of binding.
 
-> At the programming language level:
-  - Channel (interprocess communication and synchronization via message passing)
-  - Coroutine (non-preemptive multitasking)
-  - Futures and promises (synchronizing program execution)
-> At the operating system level:
-  - Computer multitasking
-    - [cooperative multitasking](https://en.wikipedia.org/wiki/Cooperative_multitasking)
-    - [preemptive multitasking](https://en.wikipedia.org/wiki/Preemption_(computing)#PREEMPTIVE)
-  - [Process](https://en.wikipedia.org/wiki/Process_(computing))
-    - Threads (are scheduled preemptively)
-    > are processes that run in the same memory context and share other resources with their parent processes.
-    > Share all their memory space for cooperation processes to exchange data
-    - Fibers (are scheduled cooperatively)
-    > Cooperatively scheduled user threads. Like threads, fibers share address space but are threads that not run in parallel.
-    - [Green threads](https://en.wikipedia.org/wiki/Green_threads)
-    > are threads that are scheduled by a runtime library or virtual machine (VM) instead of natively by the underlying operating system.
-    > Green threads emulate multithreaded environments without relying on any native OS capabilities, enabling them to work in environments that do not have native thread support.
-- [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
-- [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
-- [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library
-- [Lua Lanes](https://github.com/LuaLanes/lanes) - a lightweight, native, lazy evaluating multithreading library for Lua 5.1 to 5.4.
-- [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
-- [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
-- [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua on Unix.
-- [lua-users: MultiTasking](http://lua-users.org/wiki/MultiTasking) - This page contains links and/or discussions related to multitasking/multithreading/parallelization in Lua.
+### Database drivers
+- in-memory
+  - [tarantool](https://github.com/tarantool/tarantool) - is an in-memory database and application server.
+- File systems (CVS, Flat-File)
+- Relational databases
+  - [LuaSQL](http://keplerproject.github.io/luasql/) - a simple interface from Lua to various DBMS. Connect to ODBC, ADO, Oracle, MySQL, SQLite, Firebird and PostgreSQL databases.
+  - [LuaDBI](https://github.com/mwild1/luadbi) - Multi-backend SQL database interface library for Lua. It is designed to provide a RDBMS agnostic API. Supports DB2, Oracle, MySQL, PostgreSQL and SQLite databases with native database drivers.
+  - [LuaSQLite3](http://lua.sqlite.org) - a Lua wrapper for the SQLite3 library.
+  - [PL/Lua](https://github.com/pllua/pllua) - an implementation of Lua as a loadable procedural language for PostgreSQL.
+  - [pgmoon](https://github.com/leafo/pgmoon) - a PostgreSQL client library written in Lua for OpenResty
+- NoSQL databases
+  - [Redis](https://github.com/nrk/redis-lua) - A Lua client library for the Redis key value storage system.
+  - [lredis](https://github.com/daurnimator/lredis) - a Redis client library for Lua
+
+### Multithreading
+> Lua uses **coroutines** (non-preemptive multitasking) for [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_computing)
+
+**Native OS threads**:
+  - [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
+  - [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
+  - [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library. Message-passing model which allows multiple threads per OS thread.
+  - [Lua Lanes](https://github.com/LuaLanes/lanes) - a lightweight, native, lazy evaluating multithreading library for Lua 5.1 to 5.4. Library implementing a message passing model with one OS thread per Lua thread.
+  - [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
+
+**Coroutine-based multitasking**:
+  - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
+  - [Lumen](https://github.com/xopxe/Lumen) - Simple concurrent task scheduling.
+  - Continuation Queues: [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Embeddable asynchronous networking, threading, and notification framework for Lua on Unix. Library for managing sockets, signals, and threads based on an event loop with coroutines.
+
+> See this [comparison of options](http://lualanes.github.io/lanes/comparison.html) for more on the differences (particularly between ``lanes`` and ``luaproc``).
+>
+> See this [lua-users: MultiTasking](http://lua-users.org/wiki/MultiTasking) for links related to multitasking / multithreading / parallelization in Lua.
 
 ### Native OS APIs
-### POSIX
-- [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
-### Windows-specific
-- [winapi](https://github.com/stevedonovan/winapi) - Minimal Windows API
-- [lua-win32lib](https://github.com/bosorioo/lua-win32lib) - Small lib exposing some Win32 API to lua
-- [w32wrappers](https://github.com/luaforge/w32wrappers) - Wrappers for Win32 API functions & constants. 
-- [win32_api_luajit](https://github.com/rmbishop/win32_api_luajit) - Cosmin's win32 api for luajit (with adjustments) 
-- [luapower/winapi](https://luapower.com/winapi) - Windows, common controls and dialogs, message loop and system APIs for LuaJIT.
-### UNIX
-- [ljsyscall](https://github.com/justincormack/ljsyscall) - Unix system calls for LuaJIT
-- [minisock](https://github.com/philanc/minisock) - a minimal Lua socket library for unix / tcp / udp connections. The API is very close to the standard Unix system calls.
-- [lunix](https://luarocks.org/modules/daurnimator/lunix) - Bindings to common Unix system APIs, striving for thread-safety.
-- [luaunix](https://luarocks.org/modules/mbalmer/luaunix) - A Lua Binding for Selected Unix functions and System Calls
-- [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
+- **POSIX**
+  - [luaposix](https://luarocks.org/modules/gvvaughan/luaposix) - Lua bindings for POSIX APIs.
 
-### Web Frameworks
-- [Lapis](http://leafo.net/lapis/) - A web framework for Lua or MoonScript, powered by OpenResty
-- [Sailor](http://sailorproject.org/) - A Lua MVC web framework.
-- [Ophal](https://ophal.org/) - The highly scalable Lua CMS/CMF and web platform
-- [Orbit](http://keplerproject.github.io/orbit/) - an MVC web framework for Lua, based on WSAPI. [[1]](https://luanova.org/orbit1-2/)
+- **Windows-specific**
+  - [winapi](https://github.com/stevedonovan/winapi) - Minimal Windows API
+  - [lua-win32lib](https://github.com/bosorioo/lua-win32lib) - Small lib exposing some Win32 API to lua
+  - [w32wrappers](https://github.com/luaforge/w32wrappers) - Wrappers for Win32 API functions & constants. 
+  - [win32_api_luajit](https://github.com/rmbishop/win32_api_luajit) - Cosmin's win32 api for luajit (with adjustments) 
+  - [luapower/winapi](https://luapower.com/winapi) - Windows, common controls and dialogs, message loop and system APIs for LuaJIT.
+
+- **UNIX**
+  - [ljsyscall](https://github.com/justincormack/ljsyscall) - Unix system calls for LuaJIT
+  - [minisock](https://github.com/philanc/minisock) - a minimal Lua socket library for unix / tcp / udp connections. The API is very close to the standard Unix system calls.
+  - [lunix](https://luarocks.org/modules/daurnimator/lunix) - Bindings to common Unix system APIs, striving for thread-safety.
+  - [luaunix](https://luarocks.org/modules/mbalmer/luaunix) - A Lua Binding for Selected Unix functions and System Calls
+  - [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
 ### Libraries
 - [XMLua](https://github.com/clear-code/xmlua) [[Blog]](https://www.clear-code.com/blog/2017/12/25.html) - An user-friendly XML/HTML processing library for Lua based on libxml2
@@ -277,9 +274,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
 - [LuaCS](https://github.com/clear-code/luacs) [[Blog]](https://www.clear-code.com/blog/2018/5/23.html) - a CSS Selectors parser library for Lua
-- [LuaWebDriver](https://github.com/clear-code/lua-web-driver) [[Blog]](https://www.clear-code.com/blog/2018/11/6.html) - This is a browser automation library using WebDriver API.
+- [LuaWebDriver](https://github.com/clear-code/lua-web-driver) [[Blog]](https://www.clear-code.com/blog/2018/11/6.html) - a browser automation library using WebDriver API.
 - [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
-- [binarystream](https://luarocks.org/modules/Tarik02/binarystream) - Lua library to work with binary data (needs ffi support)
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
 ### Utilities
@@ -299,6 +295,44 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-glib](https://bitbucket.org/darktjm/lua-glib/src/?at=master) [[Doc]](http://htmlpreview.github.io/?https://bitbucket.org/darktjm/lua-glib/raw/b8e99210f24587b25602009e575d70221552436e/lua-glib.html) - Yet another Lua-to-glib binding. This package wraps the GLib library fairly thinly. It is meant to be a portability and utility library.
 - [LGI](https://luarocks.org/modules/pavouk/lgi) - Dynamic Lua binding to GObject-based libraries using [GObject-Instrospection](https://gi.readthedocs.io/). Allows using GObject-based libraries directly from Lua.
 - [lgob](https://bitbucket.org/lucashnegri/lgob) - lgob provides bindings of GObject-based libraries (like GTK+ and WebKitGTK+), for Lua 5.1 / 5.2 / LuaJIT. It consists of a compiler that parses [GObject-Instrospection](https://gi.readthedocs.io/) [gir files](https://github.com/gtk-rs/gir-files) and generates Lua modules.
+
+### Projects
+### Asynchronous I/O
+- [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
+  - [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
+- [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua, using the [Reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) like Node.js, EventMachine or Twisted.
+
+### Web Browser
+- [Luakit](https://luakit.github.io/) - A fast, extensible, and customizable web browser based on the WebKit web content engine and the GTK+ toolkit.
+
+### Web Plataforms
+- [OpenResty](https://github.com/openresty/openresty) - Turning Nginx into a Full-Fledged Scriptable Web Platform
+  - [VeryNginx](https://github.com/alexazhou/VeryNginx) - a very powerful and friendly nginx which provide WAF, Control Panel, and Dashboards.
+  - [Orange](https://github.com/sumory/orange) - A Gateway based on OpenResty (Nginx+lua) for API Monitoring and Management.
+  - [OpenStar](https://github.com/starjun/openstar) - Lua WAF, Nginx+Lua, OpenResty, LuaJIT, WAF+, CDN
+  - [nginx-lua-prometheus](https://github.com/knyar/nginx-lua-prometheus) - Prometheus metric library for Nginx written in Lua
+- [algernon](https://github.com/xyproto/algernon) - Small self-contained web server with Lua, Markdown, QUIC, Redis and PostgreSQL support
+
+### Web Frameworks
+- [Lapis](http://leafo.net/lapis/) - A web framework for Lua or MoonScript, powered by OpenResty
+- [Sailor](http://sailorproject.org/) - A Lua MVC web framework.
+- [Ophal](https://ophal.org/) - The highly scalable Lua CMS/CMF and web platform
+- [Orbit](http://keplerproject.github.io/orbit/) - an MVC web framework for Lua, based on WSAPI. [[1]](https://luanova.org/orbit1-2/)
+- [Lor Framework](http://lor.sumory.com/) - a fast, minimalist Web & API framework for lua based on OpenResty
+
+### Game Framework
+- [Skynet](https://github.com/cloudwu/skynet) - a lightweight online game framework which can be used in many other fields.
+
+### Digital Signal processing
+- [LuaRadio](http://luaradio.io/) - a lightweight, embeddable flow graph signal processing framework for software-defined radio. It provides a suite of source, sink, and processing blocks, with a simple API for defining flow graphs, running flow graphs, creating blocks, and creating data types.
+
+### Miscellaneous
+- [Kong](https://github.com/Kong/kong) - a cloud-native, fast, scalable, and distributed Microservice Abstraction Layer (also known as an API Gateway, API Middleware or in some cases Service Mesh).
+- [Snabb Switch](https://github.com/snabbco/snabb) - a simple and fast packet networking toolkit.
+- [Telize](https://github.com/fcambus/telize) - a High performance REST API built on Nginx and Lua allowing to get a visitor IP address and to query location information (IP Geolocation).
+
+- [SILE](https://github.com/simoncozens/sile) - a typesetting system; its job is to produce beautiful printed documents. Conceptually, SILE is similar to [TeX](https://en.wikipedia.org/wiki/TeX).
+- [MoonGen](https://github.com/emmericp/MoonGen) - a fully scriptable high-speed packet generator built on [DPDK](https://en.wikipedia.org/wiki/Data_Plane_Development_Kit) and LuaJIT.
 
 -----------------
 
@@ -334,6 +368,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua Short Reference](http://lua-users.org/wiki/LuaShortReference) - The Lua short reference provides a concise summary of the Lua 5.1 syntax and core libraries.
 - [Cheatsheet for Lua](https://devhints.io/lua)
 - [TutorialsPoint.com: Lua Tutorial](https://www.tutorialspoint.com/lua/) - is designed for all those readers who are looking for a starting point to learn Lua. It has topics suitable for both beginners as well as advanced users.
+- [Lua Tutorial | Novice Tutorial](http://www.runoob.com/lua/lua-tutorial.html) - Lua Application Scenario: Game development
+Stand-alone application script, Web Application Script, Database extensions and add-ons such as MySQL Proxy and MySQL WorkBench, Security system; such as an intrusion detection system.
 - [RIP Tutorial: Lua](https://riptutorial.com/lua) - Getting started with Lua
 - [The.Lua.Tutorial](http://luatut.com/) - An Introduction to Lua and The Crash Course to Lua.
 - [Lua Crash Course](http://www.coppeliarobotics.com/helpFiles/en/luaCrashCourse.htm) - Short crash course readover, or reference for when you forget the basics.
