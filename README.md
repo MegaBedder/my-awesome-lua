@@ -50,6 +50,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Lua 5.1
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
+  - [LuaJIT 2](https://github.com/openresty/luajit2) fork - OpenResty's Branch of LuaJIT 2
   - [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
 - [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on a [modified version](https://github.com/richardhundt/tvmjit) of the LuaJIT VM with features geared more to programming in the large.
 - [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
@@ -319,6 +320,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Ophal](https://ophal.org/) - The highly scalable Lua CMS/CMF and web platform
 - [Orbit](http://keplerproject.github.io/orbit/) - an MVC web framework for Lua, based on WSAPI. [[1]](https://luanova.org/orbit1-2/)
 - [Lor Framework](http://lor.sumory.com/) - a fast, minimalist Web & API framework for lua based on OpenResty
+- [Vanilla](https://github.com/idevz/vanilla) - An OpenResty Lua MVC Web Framework
 
 ### Game Framework
 - [Skynet](https://github.com/cloudwu/skynet) - a lightweight online game framework which can be used in many other fields.
@@ -330,7 +332,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Kong](https://github.com/Kong/kong) - a cloud-native, fast, scalable, and distributed Microservice Abstraction Layer (also known as an API Gateway, API Middleware or in some cases Service Mesh).
 - [Snabb Switch](https://github.com/snabbco/snabb) - a simple and fast packet networking toolkit.
 - [Telize](https://github.com/fcambus/telize) - a High performance REST API built on Nginx and Lua allowing to get a visitor IP address and to query location information (IP Geolocation).
-
 - [SILE](https://github.com/simoncozens/sile) - a typesetting system; its job is to produce beautiful printed documents. Conceptually, SILE is similar to [TeX](https://en.wikipedia.org/wiki/TeX).
 - [MoonGen](https://github.com/emmericp/MoonGen) - a fully scriptable high-speed packet generator built on [DPDK](https://en.wikipedia.org/wiki/Data_Plane_Development_Kit) and LuaJIT.
 
