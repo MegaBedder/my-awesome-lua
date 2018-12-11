@@ -67,7 +67,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Lua 5.3
 - [Titan](http://titan-lang.org) [[Slides]](http://www.lua.org/wshop17/Gualandi.pdf) - a system programming language, designed to be a statically-typed, ahead-of-time (AOT) compiled sister language to Lua, focused on performance. It is designed to seemlessly interoperate with Lua.
-  - [Pallene](https://github.com/pallene-lang/pallene) [[Slides]](https://gligneul.github.io/luaworkshop2018/) - a statically typed, ahead-of-time (AOT) compiled sister language to Lua, with a focus on performance. Pallene is also designed to seamlessly interoperate with Lua.
+  - [Pallene](https://github.com/pallene-lang/pallene) [[Paper]](http://www.inf.puc-rio.br/~roberto/docs/pallene-sblp.pdf) [[Slides]](https://gligneul.github.io/luaworkshop2018/) - a statically typed, ahead-of-time (AOT) compiled sister language to Lua, with a focus on performance. Pallene is also designed to seamlessly interoperate with Lua.
 - [Ravi](https://github.com/dibyendumajumdar/ravi) [[Slides]](http://www.lua.org/wshop15/Majumdar.pdf) [[Video]](https://www.youtube.com/watch?v=-ZOBHw1Mk2U) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
 - [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
@@ -210,23 +210,26 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lua-net](https://luarocks.org/modules/rayaman/lua-net) - Lua networking library that wraps around lua-socket to make networking easy.
 - [dromozoa-socks](https://luarocks.org/modules/moyu/dromozoa-socks) - Toolkit for network and I/O programming
 
-### Message queues
+### Message broker / queues
 - [lua-zmq](https://github.com/Neopallium/lua-zmq) - a library which extends the standard socket interfaces with an abstraction of asynchronous message queues. Lua bindings to ZeroMQ version 2.1, 2.2 or 3.2.
 - [lzmq](https://github.com/zeromq/lzmq) - Lua binding to ZeroMQ version 3.2 or 4.x library. This library has C and FFI version of binding.
 
 ### Database drivers
-- in-memory
-  - [tarantool](https://github.com/tarantool/tarantool) - is an in-memory database and application server.
-- File systems (CVS, Flat-File)
-- Relational databases
+- File systems (CVS, JSON formatted data, Flat-file database)
+  > For a small database. The file is simple. A flat file can be a plain text file, or a binary file.
+  > Records follow a uniform format, and there are no structures for indexing or recognizing relationships between records. Relationships can be inferred from the data in the database.
+- Relational databases 
+  > for features that provide consistency and reliability.
   - [LuaSQL](http://keplerproject.github.io/luasql/) - a simple interface from Lua to various DBMS. Connect to ODBC, ADO, Oracle, MySQL, SQLite, Firebird and PostgreSQL databases.
   - [LuaDBI](https://github.com/mwild1/luadbi) - Multi-backend SQL database interface library for Lua. It is designed to provide a RDBMS agnostic API. Supports DB2, Oracle, MySQL, PostgreSQL and SQLite databases with native database drivers.
   - [LuaSQLite3](http://lua.sqlite.org) - a Lua wrapper for the SQLite3 library.
   - [PL/Lua](https://github.com/pllua/pllua) - an implementation of Lua as a loadable procedural language for PostgreSQL.
   - [pgmoon](https://github.com/leafo/pgmoon) - a PostgreSQL client library written in Lua for OpenResty
 - NoSQL databases
+  > for high performance, high scalability and ease of access
+  - [Tarantool](https://github.com/tarantool/tarantool) - is an in-memory database and application server.
   - [Redis](https://github.com/nrk/redis-lua) - A Lua client library for the Redis key value storage system.
-  - [lredis](https://github.com/daurnimator/lredis) - a Redis client library for Lua
+  - [lredis](https://github.com/daurnimator/lredis) - a Redis (in-memory data structure store) client library for Lua
 
 ### Multithreading
 > Lua uses **coroutines** (non-preemptive multitasking) for [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_computing)
