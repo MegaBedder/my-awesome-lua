@@ -15,5 +15,8 @@
 >
 > PHP JIT is using DYNASM_x86 (from the luajit proj) under the hood for code compilation.
 
+[Interesting Codebases](https://medium.com/@markpapadakis/interesting-codebases-159fec5a8cc)
+> LuaJIT: the finest C codebase I ‘ve studied. It’s so elegant, so beautiful and so well designed (both LuaJIT, and the code that implements it). I can’t recommend it enough.
+
 [Mike](http://lua-users.org/lists/lua-l/2009-11/msg00089.html) [Pall]()
 > But this is an orthogonal issue.
