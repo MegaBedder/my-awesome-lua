@@ -50,7 +50,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Lua 5.1
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
-  - [LuaJIT 2](https://github.com/openresty/luajit2) fork - OpenResty's Branch of LuaJIT 2
+  - [LuaJIT 2](https://github.com/openresty/luajit2) - OpenResty's Branch of LuaJIT 2 (fork)
   - [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
 - [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on a [modified version](https://github.com/richardhundt/tvmjit) of the LuaJIT VM with features geared more to programming in the large.
 - [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
@@ -149,6 +149,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Luvent](https://github.com/ejmr/Luvent) - Simple Event Library for Lua
   - [lua_async](https://github.com/imwithye/lua_async) - Asynchronous and event driven programming in lua
   - [toynet](https://github.com/yongkangchen/toynet) - A simple event-driven I/O for Lua, coroutine based.
+  - [Reactor design pattern](https://en.wikipedia.org/wiki/Reactor_pattern)
+    - [lua-reactor](https://luarocks.org/modules/talldan/reactor) - React-style ui component system for Lua
+    - [lua-reactor-light](https://github.com/rimar/lua-reactor-light) - Lightweight lua reactor. Depends only on luasocket and exposes NodeJS-style API
 - Functional programming
   - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
   - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
@@ -305,6 +308,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
   - [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
 - [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua, using the [Reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) like Node.js, EventMachine or Twisted.
+- [Lua Corovel](https://github.com/dmccuskey/lua-corovel) - Asynchronous, event-loop development environment for Lua
 
 ### Web Browser
 - [Luakit](https://luakit.github.io/) - A fast, extensible, and customizable web browser based on the WebKit web content engine and the GTK+ toolkit.
