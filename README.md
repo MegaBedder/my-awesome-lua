@@ -158,6 +158,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - Reactive programming
   - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
+- Defensive programming
+- [Safer](https://github.com/hishamhm/safer) - Paranoid Lua programming
 
 -----------------
 
