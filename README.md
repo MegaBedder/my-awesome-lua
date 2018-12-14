@@ -17,7 +17,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [GUI](#gui)
 - [Debugging](#debugging)
 - [Network](#network)
-- [Multithreading](#multithreading)
+- [Multitasking](#multitasking)
 - [Native OS APIs](#native-os-apis)
 - [Cryptographic](#cryptographic)
 - [Libraries](#libraries)
@@ -206,8 +206,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Network
 - [lua-http](https://luarocks.org/modules/daurnimator/http) [[Video]](https://www.youtube.com/watch?v=OeABiyUlAao) - HTTP Library for Lua. Supports HTTP(S) 1.0, 1.1 and 2.0; client and server.
 - [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
+- [Lua-cURLv3](https://github.com/Lua-cURL/Lua-cURLv3) - Lua binding to libcurl
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
-- [Turbo](https://github.com/kernelsauce/turbo) - a framework built for LuaJIT 2 to simplify the task of building fast and scalable network applications. It uses a event-driven, non-blocking, no thread design to deliver excellent performance and minimal footprint to high-load applications.
+- [Turbo](https://github.com/kernelsauce/turbo) - a asynchronous networking suite and framework built for LuaJIT 2 to building fast and scalable network applications. It uses a event-driven, non-blocking, threadless design.
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
 - [llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
@@ -236,10 +237,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Redis](https://github.com/nrk/redis-lua) - A Lua client library for the Redis key value storage system.
   - [lredis](https://github.com/daurnimator/lredis) - a Redis (in-memory data structure store) client library for Lua
 
-### Multithreading
-> Lua uses **coroutines** (non-preemptive multitasking) for [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_computing)
-
+### Multitasking
 **Native OS threads**:
+> [Threads](https://en.wikipedia.org/wiki/Thread_(computing)) use [preemptive multitasking](https://en.wikipedia.org/wiki/Preemption_(computing)#Preemptive_multitasking).
   - [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads (pthreads and WIN32 threads) for Lua.
   - [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
   - [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library. Message-passing model which allows multiple threads per OS thread.
@@ -247,6 +247,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
 
 **Coroutine-based multitasking**:
+> Lua uses [coroutines](https://en.wikipedia.org/wiki/Coroutine), non-preempted form of [concurrency](https://en.wikipedia.org/wiki/Concurrent_computing) known as [cooperative multitasking](https://en.wikipedia.org/wiki/Cooperative_multitasking). This means that coroutines provide concurrency but not [parallelism](https://en.wikipedia.org/wiki/Parallel_computing).
   - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
   - [Lumen](https://github.com/xopxe/Lumen) - Simple concurrent task scheduling.
   - Continuation Queues: [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Embeddable asynchronous networking, threading, and notification framework for Lua on Unix. Library for managing sockets, signals, and threads based on an event loop with coroutines.
@@ -333,6 +334,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Game Framework
 - [Skynet](https://github.com/cloudwu/skynet) - a lightweight online game framework which can be used in many other fields.
+- [NoobHub](https://github.com/Overtorment/NoobHub) - Network multiplayer and messaging for CoronaSDK, Moai, Gideros, LÖVE & Defold
 
 ### Digital Signal processing
 - [LuaRadio](http://luaradio.io/) - a lightweight, embeddable flow graph signal processing framework for software-defined radio. It provides a suite of source, sink, and processing blocks, with a simple API for defining flow graphs, running flow graphs, creating blocks, and creating data types.
