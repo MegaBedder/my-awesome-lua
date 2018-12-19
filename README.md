@@ -275,17 +275,18 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [dromozoa-unix](https://luarocks.org/modules/moyu/dromozoa-unix) - Lua bindings for UNIX system interface
 
 ### Libraries
+- [LuaWebDriver](https://github.com/clear-code/lua-web-driver) [[Blog]](https://www.clear-code.com/blog/2018/11/6.html) - a browser automation library using WebDriver API.
+- [LuaCS](https://github.com/clear-code/luacs) [[Blog]](https://www.clear-code.com/blog/2018/5/23.html) - a CSS Selectors parser library for Lua
 - [XMLua](https://github.com/clear-code/xmlua) [[Blog]](https://www.clear-code.com/blog/2017/12/25.html) - An user-friendly XML/HTML processing library for Lua based on libxml2
 - [luaexpat](https://github.com/tomasguisasola/luaexpat) [[Doc]](https://matthewwild.co.uk/projects/luaexpat/) - a SAX XML parser based on the Expat (a stream-oriented XML parser) library.
-- [LuaExpatUtils](https://github.com/stevedonovan/LuaExpatUtils) - Utilities for working with LOM XML Documents
+  - [LuaExpatUtils](https://github.com/stevedonovan/LuaExpatUtils) - Utilities for working with LOM XML Documents
 - [luapower/expat](https://github.com/luapower/expat) - A ffi binding for the Expat XML parser.
 - [lua-cjson](https://github.com/mpx/lua-cjson) - Lua CJSON is a fast JSON encoding/parsing module for Lua
-- [LPegLabel](https://github.com/sqmedeiros/lpeglabel) - a conservative extension of the ``LPeg`` library that provides an implementation of Parsing Expression Grammars (PEGs) with labeled failures.
 - [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
+  - [LPegLabel](https://github.com/sqmedeiros/lpeglabel) - a conservative extension of the ``LPeg`` library that provides an implementation of Parsing Expression Grammars (PEGs) with labeled failures.
+  - [lpeg_patterns](https://github.com/daurnimator/lpeg_patterns) - A collection of LPEG patterns
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
-- [LuaCS](https://github.com/clear-code/luacs) [[Blog]](https://www.clear-code.com/blog/2018/5/23.html) - a CSS Selectors parser library for Lua
-- [LuaWebDriver](https://github.com/clear-code/lua-web-driver) [[Blog]](https://www.clear-code.com/blog/2018/11/6.html) - a browser automation library using WebDriver API.
-- [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
+- [luatz](https://github.com/daurnimator/luatz) - Time, Date and Timezone library for lua
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
 
 ### Utilities
@@ -293,6 +294,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Strictness](https://github.com/Yonaba/strictness) - a small module to track access and assignment to undefined variables in Lua
 - [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 - [lua-marshal](https://github.com/richardhundt/lua-marshal) - fast table serialization for Lua
+- [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
 
 ### Miscellaneous
 - [Luno](https://luarocks.org/modules/echiesse/luno) - General purpose libraries for Lua.
@@ -345,6 +347,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Telize](https://github.com/fcambus/telize) - a High performance REST API built on Nginx and Lua allowing to get a visitor IP address and to query location information (IP Geolocation).
 - [SILE](https://github.com/simoncozens/sile) - a typesetting system; its job is to produce beautiful printed documents. Conceptually, SILE is similar to [TeX](https://en.wikipedia.org/wiki/TeX).
 - [MoonGen](https://github.com/emmericp/MoonGen) - a fully scriptable high-speed packet generator built on [DPDK](https://en.wikipedia.org/wiki/Data_Plane_Development_Kit) and LuaJIT.
+- [Prosody](https://prosody.im/) IM Server - a server for Jabber/XMPP written in Lua.
 
 -----------------
 
@@ -357,6 +360,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Roberto Ierusalimschy • Publications](http://www.inf.puc-rio.br/~roberto/cvpub.html)
 - [Programming with Multiple Paradigms in Lua](http://www.inf.puc-rio.br/~roberto/docs/ry09-03.pdf)
 - [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
+- [lightweight concurrency in lua](http://wingolog.org/archives/2018/05/16/lightweight-concurrency-in-lua) - Implementing fibers and a scheduler with Lua's Coroutines
+- [Why we rewrote Lua in JS](https://hackernoon.com/why-we-rewrote-lua-in-js-a66529a8278d) - Lua for the browser
 - [Interfacing Lua with C](https://ciel.im/posts/interfacing-lua-with-c/) - Lua provides an interface allowing to call C functions in Lua environment.
 - [Asynchronous and Event-driven Programming in Lua](https://ciel.im/posts/asynchronous_lua/) - This article demonstrates how to bind libuv API to Lua environment.
 - [Port Lua to Web Environment using WebAssembly (Wasm)](https://ciel.im/posts/port-lua-to-web-environment/) - using emscripten to compile Lua
