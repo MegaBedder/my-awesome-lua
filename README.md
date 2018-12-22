@@ -27,7 +27,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ## Projects
 - [Asynchronous I/O](#asynchronous-io)
 - [Web Frameworks](#web-frameworks)
-- [Web Browser](#web-broswer)
+- [Web Browser](#web-broswers)
 
 ## Resources
 - [Blogs / Sites](#blogs--sites)
@@ -120,6 +120,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lake](https://github.com/stevedonovan/Lake) - A build engine written in Lua, similar to Ruby's rake.
 - [Luabuild](https://github.com/stevedonovan/luabuild) - A Custom Lua 5.2 Builder (tool to build a static Lua with bundled libraries)
 - [slua](https://github.com/philanc/slua) - A static build of Lua 5.3 for Linux, with a few extension libraries.
+- [Luapak](https://github.com/jirutka/luapak) - a command-line tool, multi-platform, adjustable, all-in-one (yet modular) solution for building a standalone, zero-dependencies, possibly statically linked (only on Linux) executable for (almost) any Lua program.
 
 ### IDE, Plugins and text editor
 - [ZeroBrane Studio](https://studio.zerobrane.com/) - a lightweight Lua IDE with code completion, syntax highlighting, live coding, code analyzer, and debugging support for Lua 5.x, LuaJIT, and other Lua engines.
@@ -143,6 +144,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [30log](https://github.com/Yonaba/30log) - a small class system for OOP in Lua
   - [middleclass](https://github.com/kikito/middleclass) - A simple OOP library for Lua. It has inheritance, metamethods (operators), class variables and weak mixin support.
   - [LOOP](https://luarocks.org/modules/maia/loop) - Class Models for Lua
+  - [PLoop](https://github.com/kurapica/PLoop) - a C# like style object-oriented program system for lua.
   - Aspect-oriented programming (AOP)
     - [RE-AspectLua](http://aspectlua.luaforge.net/) [[Paper]](http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0104-65002006000100002) - a Lua 5.1 extension that allows the declaration of aspects.
 - Event-driven programming
@@ -159,7 +161,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
 - Defensive programming
-- [Safer](https://github.com/hishamhm/safer) - Paranoid Lua programming
+  - [Safer](https://github.com/hishamhm/safer) - Paranoid Lua programming
 
 -----------------
 
@@ -191,8 +193,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Testing
 - [busted](http://olivinelabs.com/busted/) - BDD-style unit testing framework with great docs and Moonscript support.
+- [LuaUnit](https://github.com/bluebird75/luaunit) - a popular unit-testing framework for Lua, with an interface typical of xUnit libraries.
 - [luassert](https://github.com/Olivine-Labs/luassert) - Assertion library extending Lua's built-in assertions.
 - [Luacheck](https://github.com/mpeterv/luacheck) - A tool for linting and static analysis of Lua code.
+- [LuaInspect](https://github.com/davidm/lua-inspect) - a tool that does Lua code analysis, with plugins for HTML and SciTE.
+- [lualint](https://github.com/philips/lualint) - lua linter and static analysis of global variable
 
 ### Cryptographic
 - [lua-argon2](https://github.com/thibaultCha/lua-argon2) - the Argon2 password hashing function. Compatible with Lua 5.x and LuaJIT.
@@ -205,6 +210,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ### Network
 - [lua-http](https://luarocks.org/modules/daurnimator/http) [[Video]](https://www.youtube.com/watch?v=OeABiyUlAao) - HTTP Library for Lua. Supports HTTP(S) 1.0, 1.1 and 2.0; client and server.
+- [lua-httpclient](https://github.com/lusis/lua-httpclient) - a unified wrapper around a ``openresty/ngx.location.capture`` or ``luasocket`` and ``luasec`` as drivers.
 - [lua-websockets](https://github.com/lipp/lua-websockets) - This project provides Lua modules for Websocket Version 13 conformant clients and servers.
 - [Lua-cURLv3](https://github.com/Lua-cURL/Lua-cURLv3) - Lua binding to libcurl
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
@@ -282,6 +288,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [LuaExpatUtils](https://github.com/stevedonovan/LuaExpatUtils) - Utilities for working with LOM XML Documents
 - [luapower/expat](https://github.com/luapower/expat) - A ffi binding for the Expat XML parser.
 - [lua-cjson](https://github.com/mpx/lua-cjson) - Lua CJSON is a fast JSON encoding/parsing module for Lua
+- [neturl](https://github.com/golgote/neturl) - A Robust URL Parser (with the ability to parse querystrings) and Builder for Lua.
+- [lucihttp](https://github.com/jow-/lucihttp) - HTTP utility library with Lua binding
 - [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
   - [LPegLabel](https://github.com/sqmedeiros/lpeglabel) - a conservative extension of the ``LPeg`` library that provides an implementation of Parsing Expression Grammars (PEGs) with labeled failures.
   - [lpeg_patterns](https://github.com/daurnimator/lpeg_patterns) - A collection of LPEG patterns
@@ -372,6 +380,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua states, threads, libraries and memory layout](http://www.thijsschreijer.nl/blog/?p=693) - Diagrams and explains some more advanced concepts of the Lua VM, particularly when interfacing with C.
 - [Lua: Good, bad, and ugly parts](http://notebook.kulchenko.com/programming/lua-good-different-bad-and-ugly-parts) - A thorough summary of the good, different, bad, and ugly aspects of Lua 5.2, including many subtle quirks, by the author of ZeroBrane Studio.
 
+### [Lua Technical Notes](https://www.lua.org/notes/)
+- [LTN12: Filters sources and sinks](http://lua-users.org/wiki/FiltersSourcesAndSinks) - Filters, Sources, Sinks, and Pumps
+- [LTN13: Finalized Exceptions](http://lua-users.org/wiki/FinalizedExceptions) - LuaSocket's exception handling is based on Finalized Exceptions whitepaper.
+
 ### Glossaries
 [Lua 5.3 Glossary](https://rawgit.com/dlaurie/lua-notes/master/glossary.html) - A glossary of some essential Lua terms.
 
@@ -408,7 +420,10 @@ Stand-alone application script, Web Application Script, Database extensions and 
 
 ### Books
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - Intro to all aspects of Lua programming, written by Lua's chief architect. The official book first edition was aimed at Lua 5.0, remains largely relevant and available online.
-- [Lua Quick Reference](https://foicica.com/lua) - This book covers: Object-oriented programming with Lua. Creating and working with Lua and C Modules. Lua's standard library and its C API. Collaborative multi-threading in Lua and C. Hhow to program in and embed Lua 5.1 through 5.3, by the creator of Textadept.
+  - [Table of contents](http://www.inf.puc-rio.br/~roberto/book/contents.pdf) - Read the table of contents of first edition.
+  - [Preface](http://www.inf.puc-rio.br/~roberto/book/preface.pdf) - Read the preface of first edition.
+  - [Source Code of the examples](http://www.inf.puc-rio.br/~roberto/book/code.html) - Get the source code for some examples from the book.
+- [Lua Quick Reference](https://foicica.com/lua) - This book covers: Object-oriented programming with Lua. Creating and working with Lua and C Modules. Lua's standard library and its C API. Collaborative multi-threading in Lua and C. How to program in and embed Lua 5.1 through 5.3, by the creator of Textadept.
 - [Programming Gems](http://www.lua.org/gems/) - A collection of articles covering existing wisdom and practices on programming well in Lua, in a broad variety of use cases.
 - [Lua Programming](https://en.wikibooks.org/wiki/Lua_Programming) - A shorter overview of the language, up to date for Lua 5.2, and available online.
 
