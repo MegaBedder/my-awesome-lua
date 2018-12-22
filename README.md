@@ -27,7 +27,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ## Projects
 - [Asynchronous I/O](#asynchronous-io)
 - [Web Frameworks](#web-frameworks)
-- [Web Browser](#web-broswers)
+- [Web Browser](#web-browser)
 
 ## Resources
 - [Blogs / Sites](#blogs--sites)
@@ -136,6 +136,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Data structures
 > Tables in Lua are not a data structure; they are the data structure.
 - [Tuple](https://luarocks.org/modules/maia/tuple) - Tuple of Values for Lua.
+- [array.lua](https://github.com/EvandroLG/array.lua) - A small library with useful methods to handle Lua's table when it's working like an Array
 - [binarystream](https://luarocks.org/modules/Tarik02/binarystream) - Lua library to work with binary data (needs ffi support)
 - [lua-users: Data Structures](http://lua-users.org/wiki/DataStructures) - Here are implementations of various data structures in Lua or related discussions.
 
@@ -175,6 +176,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Readline](https://luarocks.org/modules/peterbillam/readline) - Interface to the readline library
 - [linenoise](https://github.com/philanc/slua/tree/master/src/linenoise) - A small self-contained alternative to readline and libedit.
 - [ljlinenoise](https://luarocks.org/modules/fperrad/ljlinenoise) - a pure LuaJIT port of [linenoise](https://github.com/antirez/linenoise), a small alternative to readline and libedit.
+- [LTUI](https://github.com/tboox/ltui) - A cross-platform terminal ui library based on Lua
 
 ### GUI
 - [Yue](https://libyue.com/) - A library for creating native cross-platform GUI apps.
