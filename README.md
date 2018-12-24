@@ -46,6 +46,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
 - [SquiLu](https://github.com/mingodad/squilu) - A mix between [Squirrel](http://squirrel-lang.org/) 3.0.4 and Lua 5.1.5, trying to get the best of both. Squirrel scripting language modified with lua libraries
 - [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
+- [LuaJIT Language Toolkit](https://github.com/franko/luajit-lang-toolkit) - an implementation of the Lua programming language written in Lua itself, as a starting point to implement a programming language that targets the LuaJIT virtual machine.
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
 ### Lua 5.1
@@ -158,6 +159,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - Functional programming
   - [Lua Fun](https://github.com/luafun/luafun) - a high-performance functional programming library for Lua
   - [Moses](https://github.com/Yonaba/Moses) - Utility library for functional programming in Lua
+  - [lamda](https://github.com/helpermethod/lamda) - A functional programming library for Lua, inspired by Ramda.
 - Reactive programming
   - [FRLua](https://luarocks.org/modules/aiverson/fr) - Functional Reactive programming capabilities in Lua.
   - [RxLua](https://luarocks.org/modules/bjornbytes/rxlua) - Reactive Extensions for Lua
@@ -217,6 +219,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua-cURLv3](https://github.com/Lua-cURL/Lua-cURLv3) - Lua binding to libcurl
 - [Ratchet](https://ratchet.icgood.net/) - The purpose of the ratchet library is to provide in Lua an asynchronous socket control mechanism for large numbers of sockets without using OS-level threads or losing the ease of synchronous socket programming.
 - [Turbo](https://github.com/kernelsauce/turbo) - a asynchronous networking suite and framework built for LuaJIT 2 to building fast and scalable network applications. It uses a event-driven, non-blocking, threadless design.
+- [lua-handlers](https://github.com/Neopallium/lua-handlers) - Provides a set of async. callback based handlers for working with raw TCP/UDP socket, ZeroMQ sockets, or HTTP client/server. You can get node.js style non-blocking IO with lua-handlers.
 - [LuaSocket](https://luarocks.org/modules/luarocks/luasocket) [[Doc]](https://htmlpreview.github.io/?https://raw.githubusercontent.com/diegonehab/luasocket/master/doc/index.html) - Network support for the Lua language
 - [lsocket](https://luarocks.org/modules/gunnar_z/lsocket) - simple and easy socket support for lua.
 - [llsocket](https://luarocks.org/modules/mah0x211/llsocket) - low-level socket module [this module is under heavy development]
@@ -252,6 +255,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [lua-llthreads2](https://github.com/moteus/lua-llthreads2) - drop-in replacement for ``lua-llthreads`` library with several additional functionality.
   - [luaproc](https://github.com/askyrme/luaproc) [[paper]](http://www.inf.puc-rio.br/~roberto/docs/ry08-05.pdf) - multi-threading library. Message-passing model which allows multiple threads per OS thread.
   - [Lua Lanes](https://github.com/LuaLanes/lanes) - a lightweight, native, lazy evaluating multithreading library for Lua 5.1 to 5.4. Library implementing a message passing model with one OS thread per Lua thread.
+  - [ltask](https://github.com/cloudwu/ltask) - lua multi task library, use n os thread for m lua states.
   - [Effil](https://github.com/effil/effil) [[slideshow]](http://www.lua.org/wshop18/Kupriyanov.pdf) - Multithreading support for Lua. It allows to spawn native threads and safe data exchange.
 
 **Coroutine-based multitasking**:
@@ -259,6 +263,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
   - [Copas](https://luarocks.org/modules/tieske/copas) - Dispatcher based on coroutines that can be used for asynchronous networking. (It uses LuaSocket for TCP/IP stack and LuaSec for SSL support)
   - [Lumen](https://github.com/xopxe/Lumen) - Simple concurrent task scheduling.
   - Continuation Queues: [cqueues](https://luarocks.org/modules/daurnimator/cqueues) - Embeddable asynchronous networking, threading, and notification framework for Lua on Unix. Library for managing sockets, signals, and threads based on an event loop with coroutines.
+  - [Coil](https://github.com/rxi/coil) - A tiny cooperative threading module for Lua.
 
 > See this [comparison of options](http://lualanes.github.io/lanes/comparison.html) for more on the differences (particularly between ``lanes`` and ``luaproc``).
 >
@@ -323,6 +328,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Luvit](https://luvit.io/) - Lua + libUV + jIT = pure awesomesauce
   - [Luver](https://github.com/squeek502/luver) - a ``luvit`` without ``lit``.
 - [LuaNode](https://github.com/ignacio/LuaNode) - Asynchronous I/O for Lua, using the [Reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) like Node.js, EventMachine or Twisted.
+- [node-lua](https://github.com/socoding/node-lua) - a runtime environment and server engine for lua-based scripting that runs on multi-core machines in a multi-threaded manner.
+- [Node.lua](https://github.com/czanyou/node.lua.v1) - a Lua runtime environment that uses an event-driven, non-blocking I/O model like Node.js
 - [Lua Corovel](https://github.com/dmccuskey/lua-corovel) - Asynchronous, event-loop development environment for Lua
 
 ### Web Browser
@@ -348,6 +355,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Skynet](https://github.com/cloudwu/skynet) - a lightweight online game framework which can be used in many other fields.
 - [NoobHub](https://github.com/Overtorment/NoobHub) - Network multiplayer and messaging for CoronaSDK, Moai, Gideros, LÖVE & Defold
 
+### Scientific Computing
+- [Torch](http://torch.ch/) - a scientific computing framework with wide support for machine learning algorithms that puts GPUs first.
+- [SciLua](http://scilua.org/) - A complete framework for numerical computing based on LuaJIT
+
 ### Digital Signal processing
 - [LuaRadio](http://luaradio.io/) - a lightweight, embeddable flow graph signal processing framework for software-defined radio. It provides a suite of source, sink, and processing blocks, with a simple API for defining flow graphs, running flow graphs, creating blocks, and creating data types.
 
@@ -368,6 +379,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 ### Articles and publications
 - [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext) - 2018
 - [Roberto Ierusalimschy • Publications](http://www.inf.puc-rio.br/~roberto/cvpub.html)
+- [The Implementation of Lua 5.0](https://www.lua.org/doc/jucs05.pdf) [[slides]](http://www.inf.puc-rio.br/~roberto/talks/lua5-imp.pdf) - discuss about the implementation of Lua 5.0: its register-based virtual machine, the new algorithm for optimizing tables used as arrays, the implementation of closures, and the addition of coroutines.
 - [Programming with Multiple Paradigms in Lua](http://www.inf.puc-rio.br/~roberto/docs/ry09-03.pdf)
 - [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
 - [lightweight concurrency in lua](http://wingolog.org/archives/2018/05/16/lightweight-concurrency-in-lua) - Implementing fibers and a scheduler with Lua's Coroutines
@@ -377,6 +389,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Port Lua to Web Environment using WebAssembly (Wasm)](https://ciel.im/posts/port-lua-to-web-environment/) - using emscripten to compile Lua
 - [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
 - [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
+- [Hooks in Lua for AOP](https://gist.github.com/jcmoyer/5716720) - pre/post method hooks in Lua for AOP
 - [Embeddable scripting with Lua](https://www.ibm.com/developerworks/linux/library/l-lua/index.html) - Lua offers high-level abstraction without losing touch with the hardware
 - [Embed Lua for scriptable apps](https://www.ibm.com/developerworks/linux/library/l-embed-lua/index.html) - Incorporate application scripting using a small language built for the job
 - [Lua states, threads, libraries and memory layout](http://www.thijsschreijer.nl/blog/?p=693) - Diagrams and explains some more advanced concepts of the Lua VM, particularly when interfacing with C.
@@ -387,11 +400,11 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [LTN13: Finalized Exceptions](http://lua-users.org/wiki/FinalizedExceptions) - LuaSocket's exception handling is based on Finalized Exceptions whitepaper.
 
 ### Glossaries
-[Lua 5.3 Glossary](https://rawgit.com/dlaurie/lua-notes/master/glossary.html) - A glossary of some essential Lua terms.
+- [Lua 5.3 Glossary](https://rawgit.com/dlaurie/lua-notes/master/glossary.html) - A glossary of some essential Lua terms.
 
 ### Style Guides
-[Lua-users style guide](http://lua-users.org/wiki/LuaStyleGuide) - A general, high-level style guide; unopinionated, easily agreed on.
-[Olivine style guide](https://github.com/Olivine-Labs/lua-style-guide) - A more opinionated and specific, and therefore more rigorous, guide.
+- [Lua-users style guide](http://lua-users.org/wiki/LuaStyleGuide) - A general, high-level style guide; unopinionated, easily agreed on.
+- [Olivine style guide](https://github.com/Olivine-Labs/lua-style-guide) - A more opinionated and specific, and therefore more rigorous, guide.
 
 ### Guides / Tutorials
 - [Lecture Notes based on PiL](http://www.dcc.ufrj.br/~fabiom/lua/) - course notes based on Programming in Lua book
@@ -406,11 +419,12 @@ Stand-alone application script, Web Application Script, Database extensions and 
 - [Lua Crash Course](http://www.coppeliarobotics.com/helpFiles/en/luaCrashCourse.htm) - Short crash course readover, or reference for when you forget the basics.
 - [LuaGuide](https://github.com/davisdude/LuaGuide/blob/master/LuaGuide.md) - A guide to help people learn Lua
 - [Lua Missions](https://github.com/kikito/lua_missions) - A series of 'Missions' to work through which are designed to teach aspects of Lua along the way.
+- [Litt's Lua Laboratory](http://www.troubleshooters.com/codecorn/lua/index.htm) - The 10% you need -- for 90% of your work
 - [Learn X in Y minutes: Where X=Lua](https://learnxinyminutes.com/docs/lua/) - Learn Lua in 15 Minutes
 - [Lua for Programmers](http://ebens.me/2012/08/27/lua-for-programmers-part-1) - Language Essentials, Data and Standard Libraries, More Advanced Concepts and Tips and Tricks.
 - [Phrogz: Learning Lua](http://phrogz.net/lua/index.html) - Learning Lua/From JS, Referenced Values, Metatables, and Simple Inheritance, and Pseudo-OOP Syntax and Scope.
+- [Learn Lua from JavaScript](https://www.oreilly.com/learning/learn-lua-from-javascript-part-1-an-introduction-to-lua) - If you know JavaScript, learning Lua is a snap, as Tyler Neylon explains in this series
 - [Learn Lua the Hard Way](http://www.phailed.me/2011/02/learn-lua-the-hard-way-1/) - a person has never programmed before at all
-- [Hooks in Lua for AOP](https://gist.github.com/jcmoyer/5716720) - pre/post method hooks in Lua for AOP
 
 ### Lua Workshop
 - Lua Workshop 2016
@@ -420,13 +434,21 @@ Stand-alone application script, Web Application Script, Database extensions and 
   - [Functions in Lua](http://lua.moscow/conf/2017-03-LuaInMoscow/index.html#roberto) - In this talk, we will discuss how the mechanism of first-class functions has impacted the design of Lua and will also glimpse at its implementation.
 - [Roberto Ierusalimschy • Talks](http://www.inf.puc-rio.br/~roberto/talks/index.html)
 
+### Lua Bytecode and VM
+- [A No-Frills Introduction to Lua 5.0 VM Instructions (NFI)](http://luaforge.net/docman/83/95/ANoFrillsIntroToLua5VMInstructions.pdf)
+- [A No-Frills Introduction to Lua 5.1 VM Instructions (NFI)](http://luaforge.net/docman/83/95/ANoFrillsIntroToLua5VMInstructions.pdf)
+- [Lua 5.2 Bytecode and Virtual Machine](http://files.catwell.info/misc/mirror/lua-5.2-bytecode-vm-dirk-laurie/lua52vm.html)
+- [Lua 5.3 Bytecode Reference](https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html)
+
 ### Books
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - Intro to all aspects of Lua programming, written by Lua's chief architect. The official book first edition was aimed at Lua 5.0, remains largely relevant and available online.
   - [Table of contents](http://www.inf.puc-rio.br/~roberto/book/contents.pdf) - Read the table of contents of first edition.
   - [Preface](http://www.inf.puc-rio.br/~roberto/book/preface.pdf) - Read the preface of first edition.
   - [Source Code of the examples](http://www.inf.puc-rio.br/~roberto/book/code.html) - Get the source code for some examples from the book.
-- [Lua Quick Reference](https://foicica.com/lua) - This book covers: Object-oriented programming with Lua. Creating and working with Lua and C Modules. Lua's standard library and its C API. Collaborative multi-threading in Lua and C. How to program in and embed Lua 5.1 through 5.3, by the creator of Textadept.
 - [Programming Gems](http://www.lua.org/gems/) - A collection of articles covering existing wisdom and practices on programming well in Lua, in a broad variety of use cases.
+- [Lua Quick Reference](https://foicica.com/lua) - This book covers: Object-oriented programming with Lua. Creating and working with Lua and C Modules. Lua's standard library and its C API. Collaborative multi-threading in Lua and C. How to program in and embed Lua 5.1 through 5.3, by the creator of Textadept.
+- [Wrox - Beginning Lua Programming](http://shop.oreilly.com/product/9780470069172.do) - This book is for beginning programmers, game developers, and web site developers who are interested in a introduction to programming.
+- [Creating Solid APIs with Lua](http://lua-users.org/lists/lua-l/2017-09/msg00092.html) - Learn how you can build APIs by integrating the Lua and C programming languages.
 - [Lua Programming](https://en.wikibooks.org/wiki/Lua_Programming) - A shorter overview of the language, up to date for Lua 5.2, and available online.
 
 ### Frequently Asked Questions (FAQ)
