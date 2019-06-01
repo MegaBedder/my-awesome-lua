@@ -6,8 +6,10 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 
 ## Main
 - [Implementations, Interpreters, and Bindings](#implementations-interpreters-and-bindings)
+- [Distribution](#distribution)
 - [Package Managers](#package-managers)
 - [Build Tools and Standalone Makers](#build-tools-and-standalone-makers)
+- [IDE, Plugins and text editor](#ide-plugins-and-text-editor)
 
 ## Packages
 - [Data structures](#data-structures)
@@ -16,23 +18,39 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [CLI](#cli)
 - [GUI](#gui)
 - [Debugging](#debugging)
+- [Testing](#testing)
+- [Cryptographic](#cryptographic)
+- [File System](#file-system)
 - [Network](#network)
+- [Message broker / queues](#message-broker--queues)
+- [Database drivers](#database-drivers)
 - [Multitasking](#multitasking)
 - [Native OS APIs](#native-os-apis)
-- [Cryptographic](#cryptographic)
 - [Libraries](#libraries)
 - [Utilities](#utilities)
 - [Miscellaneous](#miscellaneous)
 
 ## Projects
 - [Asynchronous I/O](#asynchronous-io)
-- [Web Frameworks](#web-frameworks)
 - [Web Browser](#web-browser)
+- [Web Plataforms](#web-plataforms)
+- [Web Frameworks](#web-frameworks)
+- [Game Framework](#game-framework)
+- [Scientific Computing](#scientific-computing)
+- [Digital Signal processing](#digital-signal-processing)
+- [Miscellaneous](#miscellaneous)
 
 ## Resources
 - [Blogs / Sites](#blogs--sites)
-- [Articles and publications](#articles-and-publications)
+- [Style Guides](#style-guides)
 - [Guides / Tutorials](#guides--tutorials)
+- [Lua Workshop](#lua-workshop)
+- [Articles](#articles)
+- [Publications and Researchs](#publications-and-researchs)
+- [Lua Technical Notes](#lua-technical-notes)
+- [Books](#books)
+- [Lua VM and Bytecode](#lua-vm-and-bytecode)
+- [Glossaries](#glossaries)
 - [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 - [Complementary lists](#complementary-lists)
 
@@ -46,7 +64,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Terra](http://terralang.org/) - a low-level system programming language that is embedded in and meta-programmed by the Lua programming language.
 - [SquiLu](https://github.com/mingodad/squilu) - A mix between [Squirrel](http://squirrel-lang.org/) 3.0.4 and Lua 5.1.5, trying to get the best of both. Squirrel scripting language modified with lua libraries
 - [Céu](http://www.ceu-lang.org/) - a reactive language that aims to offer a higher-level and safer alternative to C. “Structured Synchronous Reactive Programming”
-- [LuaJIT Language Toolkit](https://github.com/franko/luajit-lang-toolkit) - an implementation of the Lua programming language written in Lua itself, as a starting point to implement a programming language that targets the LuaJIT virtual machine.
 - [Lua Implementations](http://lua-users.org/wiki/LuaImplementations) - Reimplementations of Lua compilers and interpreters.
 
 ### Lua 5.1
@@ -70,13 +87,20 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Titan](http://titan-lang.org) [[Slides]](http://www.lua.org/wshop17/Gualandi.pdf) - a system programming language, designed to be a statically-typed, ahead-of-time (AOT) compiled sister language to Lua, focused on performance. It is designed to seemlessly interoperate with Lua.
   - [Pallene](https://github.com/pallene-lang/pallene) [[Paper]](http://www.inf.puc-rio.br/~roberto/docs/pallene-sblp.pdf) [[Slides]](https://gligneul.github.io/luaworkshop2018/) - a statically typed, ahead-of-time (AOT) compiled sister language to Lua, with a focus on performance. Pallene is also designed to seamlessly interoperate with Lua.
 - [Ravi](https://github.com/dibyendumajumdar/ravi) [[Slides]](http://www.lua.org/wshop15/Majumdar.pdf) [[Video]](https://www.youtube.com/watch?v=-ZOBHw1Mk2U) - a derivative of Lua 5.3 with limited optional static typing and features LLVM and Eclipse OMR powered JIT compilers.
-- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go
+- [golua](https://github.com/Azure/golua) - A Lua 5.3 engine implemented in Go by Azure
+- [DCLua](https://github.com/milochristiansen/lua) - A Lua 5.3 VM and compiler written in Go.
 - [Jual](http://sajonoso.github.io/jual/) - an embeddable Virtual Machine (VM) that implements the JualScript language (a subset of ECMA Script or JavaScript). The implementation is derived from Lua 5.3.
 
 ### Compiles to Lua
 - [MoonScript](https://moonscript.org/) - A programmer friendly language that compiles to Lua 5.1.
 - [Fennel](https://fennel-lang.org/) - a programming language that brings together the speed, simplicity, and reach of Lua with the flexibility of a lisp syntax and macro system.
 - [Urn](https://urn-lang.com/) - a Lisp dialect with a focus on minimalism which compiles to Lua.
+
+### Lua VM in Lua
+- [LuLu](http://lulu.luaforge.net/) - a Lua 5.1 VM implementation in Lua language itself. Implements a VM interpreter and coroutine library, but reuses the host Lua environment for data types and standard library functions. 
+- [Yueliang](http://yueliang.luaforge.net/) - Lua 5 in Lua 5 (5.0 and 5.1). The focus is on the front end of Lua, i.e. the lexical analyzer, the parser and the code generator, in order to generate binary chunks.
+- [LuaVM](https://github.com/ds84182/LuaVM) - Lua Virtual Machine (and various tools) for Lua
+- [LuaJIT Language Toolkit](https://github.com/franko/luajit-lang-toolkit) - an implementation of the Lua programming language written in Lua itself, as a starting point to implement a programming language that targets the LuaJIT virtual machine.
 
 ### Compiles to JS, asm.js or WebAssembly for Browser
   - [Brozula](https://github.com/creationix/brozula) - a LuaJIT bytecode interpreter that generates ES5 JavaScript.
@@ -296,8 +320,8 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [luapower/expat](https://github.com/luapower/expat) - A ffi binding for the Expat XML parser.
 - [lua-cjson](https://github.com/mpx/lua-cjson) - Lua CJSON is a fast JSON encoding/parsing module for Lua
 - [neturl](https://github.com/golgote/neturl) - A Robust URL Parser (with the ability to parse querystrings) and Builder for Lua.
-- [lucihttp](https://github.com/jow-/lucihttp) - HTTP utility library with Lua binding
-- [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs).
+- [lucihttp](https://github.com/jow-/lucihttp) - HTTP utility library with Lua binding9
+- [LPeg](http://www.inf.puc-rio.br/~roberto/lpeg/) - a new pattern-matching library for Lua, based on Parsing Expression Grammars (PEGs). [[1]](http://www.inf.puc-rio.br/~roberto/docs/ry08-4.pdf) [[2]](http://www.inf.puc-rio.br/~roberto/docs/ry10-01.pdf)
   - [LPegLabel](https://github.com/sqmedeiros/lpeglabel) - a conservative extension of the ``LPeg`` library that provides an implementation of Parsing Expression Grammars (PEGs) with labeled failures.
   - [lpeg_patterns](https://github.com/daurnimator/lpeg_patterns) - A collection of LPEG patterns
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
@@ -310,6 +334,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Serpent](https://github.com/pkulchenko/serpent) - Lua serializer and pretty printer.
 - [lua-marshal](https://github.com/richardhundt/lua-marshal) - fast table serialization for Lua
 - [base2base](https://github.com/catwell/base2base) - A pure Lua base-to-base converter
+- [LuaTools](http://lua-users.org/wiki/LuaTools) - tools for use with Lua. Some of these tools written in Lua. 
 
 ### Miscellaneous
 - [Luno](https://luarocks.org/modules/echiesse/luno) - General purpose libraries for Lua.
@@ -376,32 +401,6 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lua.Space](http://lua.space/) [[RSS Feed]](http://feeds.feedburner.com/Luaspace) - The Lua Community Blog
 - [lua nova](https://luanova.org/) - welcome to the moon
 
-### Articles and publications
-- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext) - 2018
-- [Roberto Ierusalimschy • Publications](http://www.inf.puc-rio.br/~roberto/cvpub.html)
-- [The Implementation of Lua 5.0](https://www.lua.org/doc/jucs05.pdf) [[slides]](http://www.inf.puc-rio.br/~roberto/talks/lua5-imp.pdf) - discuss about the implementation of Lua 5.0: its register-based virtual machine, the new algorithm for optimizing tables used as arrays, the implementation of closures, and the addition of coroutines.
-- [Programming with Multiple Paradigms in Lua](http://www.inf.puc-rio.br/~roberto/docs/ry09-03.pdf)
-- [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
-- [lightweight concurrency in lua](http://wingolog.org/archives/2018/05/16/lightweight-concurrency-in-lua) - Implementing fibers and a scheduler with Lua's Coroutines
-- [Why we rewrote Lua in JS](https://hackernoon.com/why-we-rewrote-lua-in-js-a66529a8278d) - Lua for the browser
-- [Interfacing Lua with C](https://ciel.im/posts/interfacing-lua-with-c/) - Lua provides an interface allowing to call C functions in Lua environment.
-- [Asynchronous and Event-driven Programming in Lua](https://ciel.im/posts/asynchronous_lua/) - This article demonstrates how to bind libuv API to Lua environment.
-- [Port Lua to Web Environment using WebAssembly (Wasm)](https://ciel.im/posts/port-lua-to-web-environment/) - using emscripten to compile Lua
-- [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
-- [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
-- [Hooks in Lua for AOP](https://gist.github.com/jcmoyer/5716720) - pre/post method hooks in Lua for AOP
-- [Embeddable scripting with Lua](https://www.ibm.com/developerworks/linux/library/l-lua/index.html) - Lua offers high-level abstraction without losing touch with the hardware
-- [Embed Lua for scriptable apps](https://www.ibm.com/developerworks/linux/library/l-embed-lua/index.html) - Incorporate application scripting using a small language built for the job
-- [Lua states, threads, libraries and memory layout](http://www.thijsschreijer.nl/blog/?p=693) - Diagrams and explains some more advanced concepts of the Lua VM, particularly when interfacing with C.
-- [Lua: Good, bad, and ugly parts](http://notebook.kulchenko.com/programming/lua-good-different-bad-and-ugly-parts) - A thorough summary of the good, different, bad, and ugly aspects of Lua 5.2, including many subtle quirks, by the author of ZeroBrane Studio.
-
-### [Lua Technical Notes](https://www.lua.org/notes/)
-- [LTN12: Filters sources and sinks](http://lua-users.org/wiki/FiltersSourcesAndSinks) - Filters, Sources, Sinks, and Pumps
-- [LTN13: Finalized Exceptions](http://lua-users.org/wiki/FinalizedExceptions) - LuaSocket's exception handling is based on Finalized Exceptions whitepaper.
-
-### Glossaries
-- [Lua 5.3 Glossary](https://rawgit.com/dlaurie/lua-notes/master/glossary.html) - A glossary of some essential Lua terms.
-
 ### Style Guides
 - [Lua-users style guide](http://lua-users.org/wiki/LuaStyleGuide) - A general, high-level style guide; unopinionated, easily agreed on.
 - [Olivine style guide](https://github.com/Olivine-Labs/lua-style-guide) - A more opinionated and specific, and therefore more rigorous, guide.
@@ -410,7 +409,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [Lecture Notes based on PiL](http://www.dcc.ufrj.br/~fabiom/lua/) - course notes based on Programming in Lua book
 - [Lua-Users: Lua Tutorial](http://lua-users.org/wiki/LuaTutorial) - This tutorial is aimed at all newcomers to the language Lua. We start off with where to find relevant introductory material and then progress to using the language with tutorials in the [TutorialDirectory)](http://lua-users.org/wiki/TutorialDirectory).
 - [Lua Short Reference](http://lua-users.org/wiki/LuaShortReference) - The Lua short reference provides a concise summary of the Lua 5.1 syntax and core libraries.
-- [Cheatsheet for Lua](https://devhints.io/lua)
+- [Devhints.io: Cheatsheet for Lua](https://devhints.io/lua)
 - [TutorialsPoint.com: Lua Tutorial](https://www.tutorialspoint.com/lua/) - is designed for all those readers who are looking for a starting point to learn Lua. It has topics suitable for both beginners as well as advanced users.
 - [Lua Tutorial | Novice Tutorial](http://www.runoob.com/lua/lua-tutorial.html) - Lua Application Scenario: Game development
 Stand-alone application script, Web Application Script, Database extensions and add-ons such as MySQL Proxy and MySQL WorkBench, Security system; such as an intrusion detection system.
@@ -434,11 +433,35 @@ Stand-alone application script, Web Application Script, Database extensions and 
   - [Functions in Lua](http://lua.moscow/conf/2017-03-LuaInMoscow/index.html#roberto) - In this talk, we will discuss how the mechanism of first-class functions has impacted the design of Lua and will also glimpse at its implementation.
 - [Roberto Ierusalimschy • Talks](http://www.inf.puc-rio.br/~roberto/talks/index.html)
 
-### Lua Bytecode and VM
-- [A No-Frills Introduction to Lua 5.0 VM Instructions (NFI)](http://luaforge.net/docman/83/95/ANoFrillsIntroToLua5VMInstructions.pdf)
-- [A No-Frills Introduction to Lua 5.1 VM Instructions (NFI)](http://luaforge.net/docman/83/95/ANoFrillsIntroToLua5VMInstructions.pdf)
-- [Lua 5.2 Bytecode and Virtual Machine](http://files.catwell.info/misc/mirror/lua-5.2-bytecode-vm-dirk-laurie/lua52vm.html)
-- [Lua 5.3 Bytecode Reference](https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html)
+### Articles
+- [A Look at the Design of Lua](https://cacm.acm.org/magazines/2018/11/232214-a-look-at-the-design-of-lua/fulltext) - Communications of the ACM, 2018
+- [Small is Beautiful: the Design of Lua](https://web.stanford.edu/class/ee380/Abstracts/100310.html) [[video]](https://www.youtube.com/watch?v=DQtRSJUiZUw) - Stanford EE 380: Computer Systems Colloquium (2010)
+- [The H Speed Guide to Lua](http://www.h-online.com/open/features/The-H-Speed-Guide-to-Lua-1517427.html) - Why Lua?, Developing with Lua, A quick look at Lua code, Talking with a Lua user
+- [How uses Coroutines for non-blocking I/O](http://leafo.net/posts/itchio-and-coroutines.html) - It uses coroutines for all asynchronous operations like database queries and HTTP requests.
+- [lightweight concurrency in lua](http://wingolog.org/archives/2018/05/16/lightweight-concurrency-in-lua) - Implementing fibers and a scheduler with Lua's Coroutines
+- [Why we rewrote Lua in JS](https://hackernoon.com/why-we-rewrote-lua-in-js-a66529a8278d) - Lua for the browser
+- [Interfacing Lua with C](https://ciel.im/posts/interfacing-lua-with-c/) - Lua provides an interface allowing to call C functions in Lua environment.
+- [Asynchronous and Event-driven Programming in Lua](https://ciel.im/posts/asynchronous_lua/) - This article demonstrates how to bind libuv API to Lua environment.
+- [Port Lua to Web Environment using WebAssembly (Wasm)](https://ciel.im/posts/port-lua-to-web-environment/) - using emscripten to compile Lua
+- [Implementing Proper Getter/Setters in Lua](http://ebens.me/post/implementing-proper-gettersetters-in-lua) - a class in Lua (OOP)
+- [Linked Lists in Lua](http://ebens.me/post/linked-lists-in-lua) - an example of creating custom data structures in Lua
+- [Hooks in Lua for AOP](https://gist.github.com/jcmoyer/5716720) - pre/post method hooks in Lua for AOP
+- [Embeddable scripting with Lua](https://www.ibm.com/developerworks/linux/library/l-lua/index.html) - Lua offers high-level abstraction without losing touch with the hardware
+- [Embed Lua for scriptable apps](https://www.ibm.com/developerworks/linux/library/l-embed-lua/index.html) - Incorporate application scripting using a small language built for the job
+- [Lua states, threads, libraries and memory layout](http://www.thijsschreijer.nl/blog/?p=693) - Diagrams and explains some more advanced concepts of the Lua VM, particularly when interfacing with C.
+- [Lua: Good, bad, and ugly parts](http://notebook.kulchenko.com/programming/lua-good-different-bad-and-ugly-parts) - A thorough summary of the good, different, bad, and ugly aspects of Lua 5.2, including many subtle quirks, by the author of ZeroBrane Studio.
+
+### Publications and Researchs
+- [The Implementation of Lua 5.0](https://www.lua.org/doc/jucs05.pdf) [[slides]](http://www.inf.puc-rio.br/~roberto/talks/lua5-imp.pdf) - discuss about the implementation of Lua 5.0: its register-based virtual machine, the new algorithm for optimizing tables used as arrays, the implementation of closures, and the addition of coroutines.
+- [Programming with Multiple Paradigms in Lua](http://www.inf.puc-rio.br/~roberto/docs/ry09-03.pdf)
+- [Coroutines in Lua](http://www.inf.puc-rio.br/~roberto/docs/corosblp.pdf)
+- [Lua.org: Papers and theses](https://www.lua.org/papers.html)
+- [Roberto Ierusalimschy • Publications](http://www.inf.puc-rio.br/~roberto/cvpub.html)
+- [LabLua - Programming Language Research](http://www.lua.inf.puc-rio.br/publications.html)
+
+### [Lua Technical Notes](https://www.lua.org/notes/)
+- [LTN12: Filters sources and sinks](http://lua-users.org/wiki/FiltersSourcesAndSinks) - Filters, Sources, Sinks, and Pumps
+- [LTN13: Finalized Exceptions](http://lua-users.org/wiki/FinalizedExceptions) - LuaSocket's exception handling is based on Finalized Exceptions whitepaper.
 
 ### Books
 - [Programming in Lua (PiL)](http://www.lua.org/pil/) - Intro to all aspects of Lua programming, written by Lua's chief architect. The official book first edition was aimed at Lua 5.0, remains largely relevant and available online.
@@ -450,6 +473,15 @@ Stand-alone application script, Web Application Script, Database extensions and 
 - [Wrox - Beginning Lua Programming](http://shop.oreilly.com/product/9780470069172.do) - This book is for beginning programmers, game developers, and web site developers who are interested in a introduction to programming.
 - [Creating Solid APIs with Lua](http://lua-users.org/lists/lua-l/2017-09/msg00092.html) - Learn how you can build APIs by integrating the Lua and C programming languages.
 - [Lua Programming](https://en.wikibooks.org/wiki/Lua_Programming) - A shorter overview of the language, up to date for Lua 5.2, and available online.
+
+### Lua VM and Bytecode
+- [A No-Frills Introduction to Lua 5.0 VM Instructions (NFI)](http://luaforge.net/docman/83/95/ANoFrillsIntroToLua5VMInstructions.pdf)
+- [A No-Frills Introduction to Lua 5.1 VM Instructions (NFI)](http://luaforge.net/docman/83/98/ANoFrillsIntroToLua51VMInstructions.pdf)
+- [Lua 5.2 Bytecode and Virtual Machine](http://files.catwell.info/misc/mirror/lua-5.2-bytecode-vm-dirk-laurie/lua52vm.html)
+- [Lua 5.3 Bytecode Reference](https://the-ravi-programming-language.readthedocs.io/en/latest/lua_bytecode_reference.html)
+
+### Glossaries
+- [Lua 5.3 Glossary](https://rawgit.com/dlaurie/lua-notes/master/glossary.html) - A glossary of some essential Lua terms.
 
 ### Frequently Asked Questions (FAQ)
 - [Lua FAQ](http://www.lua.org/faq.html) - official Lua FAQ
