@@ -70,6 +70,9 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [LuaJIT](http://luajit.org/luajit.html) - High-performance Just-In-Time compiler for Lua.
   - [LuaJIT 2](https://github.com/openresty/luajit2) - OpenResty's Branch of LuaJIT 2 (fork)
   - [RaptorJIT](https://github.com/raptorjit/raptorjit) - A dynamic language for system programming (LuaJIT fork for Linux/x86-64 server applications)
+  - [Moonjit](https://github.com/moonjit/moonjit) - JIT Compiler for the Lua. Fork of LuaJIT to continue development
+  - [LuaVela](https://github.com/iponweb/luavela) [[BLOG]](https://eliasdaler.github.io/luavela/) - an implementation of Lua 5.1 based on LuaJIT 2.0, for Linux x86-64 only.
+  - [LjTools](https://github.com/rochus-keller/LjTools) - LuaJIT Assembler/Disassembler - Tool to study LuaJIT 2.0 Bytecode with GUI
 - [Shine](https://github.com/richardhundt/shine) - a general purpose, dynamic, multi-paradigm programming language which is based on a [modified version](https://github.com/richardhundt/tvmjit) of the LuaJIT VM with features geared more to programming in the large.
 - [Metalua](https://github.com/fab13n/metalua) - a compiler for a superset of the Lua 5.1 language, which supports compile-time metaprogramming.
 - [Typed Lua](https://github.com/andremm/typedlua) (PhD Thesis) - An Optional Type System for Lua
