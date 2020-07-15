@@ -330,6 +330,7 @@ Inspired by the list [LewisJEllis/awesome-lua](https://github.com/LewisJEllis/aw
 - [lualinq](https://luarocks.org/modules/djfdyuruiry/lualinq) - Lightweight library which allows functional querying and transformation of lua arrays and objects
 - [luatz](https://github.com/daurnimator/luatz) - Time, Date and Timezone library for lua
 - [Libraries And Bindings](http://lua-users.org/wiki/LibrariesAndBindings) - a list of libraries implemented in Lua or implemented in another language (e.g. C) but having a Lua interface.
+- [Aspect](https://github.com/unifire-app/aspect) - template engine with full syntax Twig/Jinja/Django.
 
 ### Utilities
 - [Allen](https://github.com/Yonaba/Allen) - An utility library to manipulate strings, which provides a set of helpers for strings operations for Lua.
